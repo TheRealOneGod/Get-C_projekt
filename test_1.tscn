@@ -1,5 +1,5 @@
 [gd_scene format=3 uid="uid://uuegsrqt6l5d"]
 
-[node name="Test 1" type="Node2D" unique_id=791097472]
+[node name="Test1" type="Node2D" unique_id=791097472]
 
 [node name="Charcter" type="Node2D" parent="." unique_id=92401072]
