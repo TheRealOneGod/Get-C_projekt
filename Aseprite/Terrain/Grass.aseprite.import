@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://demj1o5jx8l1n"
+path="res://.godot/imported/Grass.aseprite-0c399a23f31d6c1509cd6b60f03cdfcf.res"
+
+[deps]
+
+source_file="res://Aseprite/Terrain/Grass.aseprite"
+dest_files=["res://.godot/imported/Grass.aseprite-0c399a23f31d6c1509cd6b60f03cdfcf.res"]
+
+[params]
+

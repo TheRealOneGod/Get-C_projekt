@@ -1,0 +1,186 @@
+[gd_scene format=4 uid="uid://uuegsrqt6l5d"]
+
+[sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_a0opa"]
+_data = PackedByteArray("AAADAAUAAAABAAAAoAAAAJAAAABIAwAAUklGRkADAABXRUJQVlA4TDQDAAAvn8AjEDegGJIkNrmvlQgXGE7rlEZAAodJrEADn+x2kglYRneqwSuBFuY/AJB6N5LtVjn+D5Jba4/b6iPtpzWpCogfLsAAG8jUQvY0DPz91yBx+DhkequI/ktw20iSJEbPPbOrjKxX4M85MUauZZ774cK1DDsvaa2WZ3xyLetZ4rzKtVB0HD+1hXo2nE9cS1WlhT/bRzmZh27jWqjzEkzSbVRLx9neCrczBTquhTsbwSApxrXQZ5OCnCnnDGshz9ZiTmNaRp3XYWYLTCHIS+Yq1mBYC3k2wo6ZLba2eov8SQuCYS3k2TiLnA34PAfGjmvphBIwroU7G+d/bsuvaWKMa7kfLlN3MNeY5vszPgeJMc41sLmnT9fjO3dKN/fch/OpuoNJPsrJPHSrGHQfMUb0MEm3UffRaq56K9zOj1CGsvcxhkFSagfsfdSbq6Qgx8fmTnt2YNIY5sDugL6PUDYXN9Liep4N7j6qbE2Ql8xVbPGR2wF1HxRv6vaeZ4O/j/CW52W8P4lFvtEgBWoH7fsg5N9xSuF2wN9HsJmwexyT9BCAz3NgLMeBsIMgqEDpnI4dcPurNYciYoQdY6AyDV3NjfuYi2seZ9wO/kIt1Hxh1Ez2Gxv1aTHOqy726hNjJGO6UlxS5fPuhwsZ05Pik26V5iUYAF2enOelI8XVm7+EWFAyhkkx9bw+noxpcx2az5rziYxpprhWc8NHOZmHbmRMK8W0m3kmUUwa661wy/anupEx1RQLRzSXthaDpAComCoRz0sHKUjteskYKVcqYom8MsQ3GI5pQw/f4EBxIAAs580jBXnJXMWainpMOwXg8rLPkFRrdlB2jHJ+hpNY5OsLUttfNYZIAZlXrE+3ZdR2BXyeA2PBxRApoPJQba72UTFMH9vy0/t3fPW3NHJUsdik1fiHbmt9fsBaHDYsNgZTxBi5lnnuhwvd4r4LT8ozY1YDs9IXi3Kr/UOyj/dRDtcSliMy4QdvhRvXInY1U35RypVSLVgSvrogL5mrWKblWyAW+UqDMC2zmTUE4PMcwDrTbpkz1ebKaw35ayXlS9cC5x+LgfeLSW45isWo6nLvtsVg+hcA")
+size_override = Vector2(160, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cc5th"]
+atlas = SubResource("PortableCompressedTexture2D_a0opa")
+region = Rect2(120, 36, 40, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1v2iw"]
+atlas = SubResource("PortableCompressedTexture2D_a0opa")
+region = Rect2(80, 72, 40, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t5j1y"]
+atlas = SubResource("PortableCompressedTexture2D_a0opa")
+region = Rect2(120, 72, 40, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v5684"]
+atlas = SubResource("PortableCompressedTexture2D_a0opa")
+region = Rect2(0, 108, 40, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qmvwy"]
+atlas = SubResource("PortableCompressedTexture2D_a0opa")
+region = Rect2(40, 36, 40, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jt85g"]
+atlas = SubResource("PortableCompressedTexture2D_a0opa")
+region = Rect2(0, 0, 40, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mh0xm"]
+atlas = SubResource("PortableCompressedTexture2D_a0opa")
+region = Rect2(80, 36, 40, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7x4yt"]
+atlas = SubResource("PortableCompressedTexture2D_a0opa")
+region = Rect2(40, 0, 40, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c5b4g"]
+atlas = SubResource("PortableCompressedTexture2D_a0opa")
+region = Rect2(80, 0, 40, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ilkps"]
+atlas = SubResource("PortableCompressedTexture2D_a0opa")
+region = Rect2(120, 0, 40, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kxysi"]
+atlas = SubResource("PortableCompressedTexture2D_a0opa")
+region = Rect2(0, 36, 40, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oamol"]
+atlas = SubResource("PortableCompressedTexture2D_a0opa")
+region = Rect2(40, 108, 40, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0bfdo"]
+atlas = SubResource("PortableCompressedTexture2D_a0opa")
+region = Rect2(0, 72, 40, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4co7m"]
+atlas = SubResource("PortableCompressedTexture2D_a0opa")
+region = Rect2(40, 72, 40, 36)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5dbd2"]
+animations = [{
+"frames": [{
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_cc5th")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1v2iw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t5j1y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v5684")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_cc5th")
+}],
+"loop": 0,
+"name": &"Attack",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qmvwy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jt85g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mh0xm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jt85g")
+}],
+"loop": 0,
+"name": &"Fall",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jt85g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7x4yt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c5b4g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jt85g")
+}],
+"loop": 1,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jt85g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c5b4g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ilkps")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kxysi")
+}],
+"loop": 0,
+"name": &"Jump",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cc5th")
+}, {
+"duration": 5.0,
+"texture": SubResource("AtlasTexture_oamol")
+}],
+"loop": 0,
+"name": &"Parry",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cc5th")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0bfdo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4co7m")
+}],
+"loop": 1,
+"name": &"Walk",
+"speed": 10.0
+}]
+
+[node name="Player" type="Node2D" unique_id=791097472]
+
+[node name="Player" type="AnimatedSprite2D" parent="." unique_id=767617528]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_5dbd2")
+animation = &"Parry"
+frame = 1
+frame_progress = 1.0
+metadata/_aseprite_wizard_interface_config_ = {
+"pending_changes": {}
+}
+metadata/_aseprite_wizard_config_ = {
+"embed_tex": true,
+"layers": [],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"scale": "1.0",
+"should_round_fps": true,
+"slice": "",
+"source": "res://Aseprite/Characters/Charcter 1.aseprite",
+"source_uid": 1293654421684369109
+}
+metadata/_aseprite_wizard_source_file_hash_ = "3f95e85311d15ec03a597820cbe9f814"
