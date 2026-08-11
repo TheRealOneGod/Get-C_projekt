@@ -1,12 +1,5 @@
 [gd_scene format=3 uid="uid://uuegsrqt6l5d"]
 
-[ext_resource type="SpriteFrames" uid="uid://d2iqj3nwqqddy" path="res://Scenes/Characters/Test character/Charcter 1.aseprite" id="1_n4tus"]
+[node name="Test 1" type="Node2D" unique_id=791097472]
 
-[node name="Player" type="Node2D" unique_id=791097472]
-
-[node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=126248341]
-texture_filter = 1
-position = Vector2(20, -18)
-sprite_frames = ExtResource("1_n4tus")
-animation = &"Fall"
-frame_progress = 0.17588542
+[node name="Charcter" type="Node2D" parent="." unique_id=92401072]
