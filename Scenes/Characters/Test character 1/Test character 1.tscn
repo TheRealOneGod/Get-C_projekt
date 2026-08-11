@@ -170,10 +170,12 @@ script = ExtResource("1_cc5th")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=767617528]
 texture_filter = 1
-position = Vector2(9, 0)
-scale = Vector2(1.05, 1)
+position = Vector2(0.053437278, -1)
+scale = Vector2(1.048125, 1)
 sprite_frames = SubResource("SpriteFrames_5dbd2")
-animation = &"Idle"
+animation = &"Walk"
+centered = false
+offset = Vector2(-11.5, -18)
 script = ExtResource("2_1v2iw")
 metadata/_aseprite_wizard_interface_config_ = {
 "pending_changes": {}
@@ -194,7 +196,7 @@ metadata/_aseprite_wizard_config_ = {
 metadata/_aseprite_wizard_source_file_hash_ = "3f95e85311d15ec03a597820cbe9f814"
 
 [node name="Omni box" type="CollisionShape2D" parent="." unique_id=985839302]
-position = Vector2(0, 3)
+position = Vector2(0, 2)
 shape = SubResource("CapsuleShape2D_68pkx")
 
 [connection signal="animation_finished" from="Sprite" to="." method="_on_sprite_animation_finished"]

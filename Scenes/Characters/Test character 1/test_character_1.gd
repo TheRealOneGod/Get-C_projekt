@@ -4,7 +4,8 @@ class_name PlayerController
 @export var SPEED := 300.0
 @export var JUMP_VELOCITY := -400.0
 # knockedbacked := false
-@onready var sprite := $Sprite
+@onready var sprite := $"Sprite"
+@onready var omni_box := $"Omni box"
 
 enum State {Idle, Walk, Jump, Fall, BaseAttack1}
 var state := State.Idle
