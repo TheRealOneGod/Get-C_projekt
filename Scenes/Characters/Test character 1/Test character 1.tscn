@@ -1,5 +1,8 @@
 [gd_scene format=4 uid="uid://uuegsrqt6l5d"]
 
+[ext_resource type="Script" uid="uid://co67mewvjy0rx" path="res://Scenes/Characters/Test character 1/test_character_1.gd" id="1_cc5th"]
+[ext_resource type="Script" uid="uid://cvx4lhkcvy3th" path="res://Scenes/Characters/Test character 1/sprite.gd" id="2_1v2iw"]
+
 [sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_a0opa"]
 _data = PackedByteArray("AAADAAUAAAABAAAAoAAAAJAAAABIAwAAUklGRkADAABXRUJQVlA4TDQDAAAvn8AjEDegGJIkNrmvlQgXGE7rlEZAAodJrEADn+x2kglYRneqwSuBFuY/AJB6N5LtVjn+D5Jba4/b6iPtpzWpCogfLsAAG8jUQvY0DPz91yBx+DhkequI/ktw20iSJEbPPbOrjKxX4M85MUauZZ774cK1DDsvaa2WZ3xyLetZ4rzKtVB0HD+1hXo2nE9cS1WlhT/bRzmZh27jWqjzEkzSbVRLx9neCrczBTquhTsbwSApxrXQZ5OCnCnnDGshz9ZiTmNaRp3XYWYLTCHIS+Yq1mBYC3k2wo6ZLba2eov8SQuCYS3k2TiLnA34PAfGjmvphBIwroU7G+d/bsuvaWKMa7kfLlN3MNeY5vszPgeJMc41sLmnT9fjO3dKN/fch/OpuoNJPsrJPHSrGHQfMUb0MEm3UffRaq56K9zOj1CGsvcxhkFSagfsfdSbq6Qgx8fmTnt2YNIY5sDugL6PUDYXN9Liep4N7j6qbE2Ql8xVbPGR2wF1HxRv6vaeZ4O/j/CW52W8P4lFvtEgBWoH7fsg5N9xSuF2wN9HsJmwexyT9BCAz3NgLMeBsIMgqEDpnI4dcPurNYciYoQdY6AyDV3NjfuYi2seZ9wO/kIt1Hxh1Ez2Gxv1aTHOqy726hNjJGO6UlxS5fPuhwsZ05Pik26V5iUYAF2enOelI8XVm7+EWFAyhkkx9bw+noxpcx2az5rziYxpprhWc8NHOZmHbmRMK8W0m3kmUUwa661wy/anupEx1RQLRzSXthaDpAComCoRz0sHKUjteskYKVcqYom8MsQ3GI5pQw/f4EBxIAAs580jBXnJXMWainpMOwXg8rLPkFRrdlB2jHJ+hpNY5OsLUttfNYZIAZlXrE+3ZdR2BXyeA2PBxRApoPJQba72UTFMH9vy0/t3fPW3NHJUsdik1fiHbmt9fsBaHDYsNgZTxBi5lnnuhwvd4r4LT8ozY1YDs9IXi3Kr/UOyj/dRDtcSliMy4QdvhRvXInY1U35RypVSLVgSvrogL5mrWKblWyAW+UqDMC2zmTUE4PMcwDrTbpkz1ebKaw35ayXlS9cC5x+LgfeLSW45isWo6nLvtsVg+hcA")
 size_override = Vector2(160, 144)
@@ -63,7 +66,7 @@ region = Rect2(40, 72, 40, 36)
 [sub_resource type="SpriteFrames" id="SpriteFrames_5dbd2"]
 animations = [{
 "frames": [{
-"duration": 2.0,
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_cc5th")
 }, {
 "duration": 1.0,
@@ -75,7 +78,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_v5684")
 }, {
-"duration": 2.0,
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_cc5th")
 }],
 "loop": 0,
@@ -159,14 +162,19 @@ animations = [{
 "speed": 10.0
 }]
 
-[node name="Player" type="Node2D" unique_id=791097472]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_68pkx"]
+radius = 4.0
 
-[node name="Player" type="AnimatedSprite2D" parent="." unique_id=767617528]
+[node name="Player" type="CharacterBody2D" unique_id=1370364543]
+script = ExtResource("1_cc5th")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=767617528]
 texture_filter = 1
+position = Vector2(9, 0)
+scale = Vector2(1.05, 1)
 sprite_frames = SubResource("SpriteFrames_5dbd2")
-animation = &"Parry"
-frame = 1
-frame_progress = 1.0
+animation = &"Idle"
+script = ExtResource("2_1v2iw")
 metadata/_aseprite_wizard_interface_config_ = {
 "pending_changes": {}
 }
@@ -184,3 +192,9 @@ metadata/_aseprite_wizard_config_ = {
 "source_uid": 1293654421684369109
 }
 metadata/_aseprite_wizard_source_file_hash_ = "3f95e85311d15ec03a597820cbe9f814"
+
+[node name="Omni box" type="CollisionShape2D" parent="." unique_id=985839302]
+position = Vector2(0, 3)
+shape = SubResource("CapsuleShape2D_68pkx")
+
+[connection signal="animation_finished" from="Sprite" to="." method="_on_sprite_animation_finished"]
