@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://uuegsrqt6l5d"]
 
-[ext_resource type="SpriteFrames" uid="uid://d2iqj3nwqqddy" path="res://Scenes/Characters/Test character 1/Charcter 1.aseprite" id="1_oiwt5"]
+[ext_resource type="SpriteFrames" uid="uid://d2iqj3nwqqddy" path="res://Scenes/Characters/Test character 1/Charcter 1.1.aseprite" id="1_oiwt5"]
 
 [node name="Player" type="Node2D" unique_id=791097472]
 

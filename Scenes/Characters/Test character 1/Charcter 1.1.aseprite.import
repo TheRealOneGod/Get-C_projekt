@@ -3,12 +3,12 @@
 importer="aseprite_wizard.plugin.spriteframes"
 type="SpriteFrames"
 uid="uid://d2iqj3nwqqddy"
-path="res://.godot/imported/Charcter 1.aseprite-45e3d1b838a3f57c77e2f470dea1e30a.res"
+path="res://.godot/imported/Charcter 1.1.aseprite-0cabd9b216d3b90b9e0c12dd09b769eb.res"
 
 [deps]
 
-source_file="res://Scenes/Characters/Test character 1/Charcter 1.aseprite"
-dest_files=["res://.godot/imported/Charcter 1.aseprite-45e3d1b838a3f57c77e2f470dea1e30a.res"]
+source_file="res://Scenes/Characters/Test character 1/Charcter 1.1.aseprite"
+dest_files=["res://.godot/imported/Charcter 1.1.aseprite-0cabd9b216d3b90b9e0c12dd09b769eb.res"]
 
 [params]
 
