@@ -1,0 +1,21 @@
+[remap]
+
+importer="aseprite_wizard.plugin.spriteframes"
+type="SpriteFrames"
+uid="uid://cdocl0qghtl6o"
+path="res://.godot/imported/Charcter 2.aseprite-f44b02f565295bd410dd28c96c21be2e.res"
+
+[deps]
+
+source_file="res://Scenes/Characters/Test character 2/Charcter 2.aseprite"
+dest_files=["res://.godot/imported/Charcter 2.aseprite-f44b02f565295bd410dd28c96c21be2e.res"]
+
+[params]
+
+layer/exclude_layers_pattern=""
+layer/only_visible_layers=true
+sheet/sheet_type="packed"
+sheet/sheet_columns=12
+sheet/frame_padding=0
+sheet/scale=1
+animation/round_fps=true

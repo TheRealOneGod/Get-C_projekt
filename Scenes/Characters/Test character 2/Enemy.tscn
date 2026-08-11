@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://ckuqpc4056trs"]
+
+[ext_resource type="SpriteFrames" uid="uid://cdocl0qghtl6o" path="res://Scenes/Characters/Test character 2/Charcter 2.aseprite" id="1_3dahj"]
+
+[node name="Enemy" type="Node2D" unique_id=764942362]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=661791052]
+texture_filter = 1
+sprite_frames = ExtResource("1_3dahj")
+animation = &"Attack"
