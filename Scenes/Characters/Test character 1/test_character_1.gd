@@ -2,6 +2,8 @@ class_name Test_character1 extends CharacterBody2D
 
 @onready var input_component: InputComponent = $InputComponent
 @onready var movement_component: MovementComponent = %MovementComponent
+@onready var health_component: HealthComponent = %HealthComponent
+@onready var animation_component: AnimationComponent = %AnimationComponent
 
 func _physics_process(delta: float) -> void:
 	# Read inputs

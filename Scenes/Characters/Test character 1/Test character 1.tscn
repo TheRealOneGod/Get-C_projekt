@@ -4,6 +4,8 @@
 [ext_resource type="Script" uid="uid://r4utka6vxxf4" path="res://Components/Movement_component.gd" id="1_t5j1y"]
 [ext_resource type="Script" uid="uid://cvx4lhkcvy3th" path="res://Scenes/Characters/Test character 1/sprite.gd" id="2_1v2iw"]
 [ext_resource type="Script" uid="uid://c3et4oc3x5qtt" path="res://Components/Input_component.gd" id="3_t5j1y"]
+[ext_resource type="Script" uid="uid://76fb74nrlku2" path="res://Components/Health_component.gd" id="5_qmvwy"]
+[ext_resource type="Script" uid="uid://i5o2ga1u8ho5" path="res://Components/Animation_component.gd" id="6_jt85g"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_68pkx"]
 radius = 4.0
@@ -212,3 +214,14 @@ script = ExtResource("1_t5j1y")
 body = NodePath("..")
 sprite = NodePath("../Sprite")
 metadata/_custom_type_script = "uid://r4utka6vxxf4"
+
+[node name="HealthComponent" type="Node" parent="." unique_id=94699116]
+unique_name_in_owner = true
+script = ExtResource("5_qmvwy")
+metadata/_custom_type_script = "uid://76fb74nrlku2"
+
+[node name="AnimationComponent" type="Node" parent="." unique_id=605986763 node_paths=PackedStringArray("sprite")]
+unique_name_in_owner = true
+script = ExtResource("6_jt85g")
+sprite = NodePath("../Sprite")
+metadata/_custom_type_script = "uid://i5o2ga1u8ho5"
