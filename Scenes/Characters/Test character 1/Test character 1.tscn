@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://c3et4oc3x5qtt" path="res://Components/Input_component.gd" id="3_t5j1y"]
 [ext_resource type="Script" uid="uid://76fb74nrlku2" path="res://Components/Health_component.gd" id="5_qmvwy"]
 [ext_resource type="Script" uid="uid://i5o2ga1u8ho5" path="res://Components/Animation_component.gd" id="6_jt85g"]
+[ext_resource type="Script" uid="uid://c7u2hhxq2xx41" path="res://Components/Meele_basic_attack_component.gd" id="7_mh0xm"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_68pkx"]
 radius = 4.0
@@ -220,8 +221,14 @@ unique_name_in_owner = true
 script = ExtResource("5_qmvwy")
 metadata/_custom_type_script = "uid://76fb74nrlku2"
 
-[node name="AnimationComponent" type="Node" parent="." unique_id=605986763 node_paths=PackedStringArray("sprite")]
+[node name="AnimationComponent" type="Node" parent="." unique_id=605986763 node_paths=PackedStringArray("sprite", "body")]
 unique_name_in_owner = true
 script = ExtResource("6_jt85g")
 sprite = NodePath("../Sprite")
+body = NodePath("..")
 metadata/_custom_type_script = "uid://i5o2ga1u8ho5"
+
+[node name="MeeleBasicAttackComponent" type="Node" parent="." unique_id=247601228]
+unique_name_in_owner = true
+script = ExtResource("7_mh0xm")
+metadata/_custom_type_script = "uid://c7u2hhxq2xx41"

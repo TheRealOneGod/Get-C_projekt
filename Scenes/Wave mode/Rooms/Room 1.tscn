@@ -118,6 +118,21 @@ position = Vector2(568, 332)
 [node name="Grass block37" parent="Floor" unique_id=1367060473 instance=ExtResource("2_h5fy8")]
 position = Vector2(264, 316)
 
+[node name="Grass block40" parent="Floor" unique_id=332623133 instance=ExtResource("2_h5fy8")]
+position = Vector2(280, 300)
+
+[node name="Grass block41" parent="Floor" unique_id=2048831670 instance=ExtResource("2_h5fy8")]
+position = Vector2(296, 284)
+
+[node name="Grass block42" parent="Floor" unique_id=1091299393 instance=ExtResource("2_h5fy8")]
+position = Vector2(312, 268)
+
+[node name="Grass block43" parent="Floor" unique_id=1884499056 instance=ExtResource("2_h5fy8")]
+position = Vector2(328, 252)
+
+[node name="Grass block44" parent="Floor" unique_id=662581717 instance=ExtResource("2_h5fy8")]
+position = Vector2(344, 236)
+
 [node name="Grass block39" parent="Floor" unique_id=1214822287 instance=ExtResource("2_h5fy8")]
 position = Vector2(8, 300)
 
