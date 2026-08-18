@@ -13,10 +13,6 @@
 _data = PackedByteArray("AAADAAUAAAABAAAA6AAAAJAAAABiAwAAUklGRloDAABXRUJQVlA4TE0DAAAv58AjEDegGJIkNrmvlQgXGE7rlEZAAodJrEADn+x2kglYRneqwSuBFuY/AJB6N5LtVjn+D5Jba4/b6iPtpzXpCoQfLsAAG8jUgvc0BPz912CRyv9xyPQ2Ef2X4DaSI0nMOe9UWXWfwJ/ppJTIqCHdnk5kVMctseaL2tJGRs1p9C0pGcXRnuKoUdzDDjGTUTYHUS0X8VFP4aFLzyhuSwyXdekX1XQRb5Xr3gTtGUUuguGQFT2jGi5CKrI37dMxil2Emdv1iuq3pYCeUY0XscpL4SzeoWMUuwjGBT2jWi9CPMr/SqugYxS7CNJEiwDu+8D5nlHNoQb0jCIXQfpPH/XbmpTSfG5Pp1FXyJpuhbctbd2klLoadoVNinVOsfm18cdp8hpCzLYVjuejnsJDF4turyGlhCZc1qXfazAfx+atct2/hVKUfg29OGTlVki/BuNxbKQiz2/t19ZkhS734gDQK2z4Gtb6ONV7MAtNHjb5Gmy8ySovhbP46ltyhdxr4ERndGnysFu+hvWtDC7E+AnxKC9tlSYPm3gNjPJngnLIFbZ8DasvrJe4V2Q9tgL3feA8KYBxAUNggdo+LVZI3ozpOGsV0ccFveBgrNocx/oahkUep6eeK/zziuLmy8XNuH5xozFPKETVCT+tpZTYqjZNIau2DL49ndiqJk0x62I5zugcgMY20kbZKsF4nK9HqihbRTU5Y3Ajka0iBLMm/9NCzGyVvSmYj2P1UU/hoQtbZW5yxHEacJnj8jDeKtfiZlQXtsrW5BGY49QWM4esALgqG5HYQD4mFTl6gOYqexNEPBNch0QrR3IENBGtAjgBDIAWonvkA6u8FM7i3QFjFdEEkMHF95BVTS7gXNDP/j18QjzKi1nl6GZsVUwT2ODqYnSZimn5wH0fOA+yimkCFwzbcQ6LmSquiQ/+kfv3/NGfpr6jigknzyg+dJnv+0+YT8CCCcdhNCklMmpIt6cTHxW+CRtnK7gZwc32g4mFGf8iuQzlox4yap2SyFi/8Fa5klHiZzTab5T61rgoTAtfvFVeCmfxVNR3QDzKW1uFihqYm8cK3PcBfHBE1HBzeBzLZ3jlZzb1R+eDEB8TQowTymFKigmp6pRfLTP+lpF/AAA=")
 size_override = Vector2(232, 144)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_7x4yt"]
-atlas = SubResource("PortableCompressedTexture2D_mh0xm")
-region = Rect2(174, 36, 58, 36)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_c5b4g"]
 atlas = SubResource("PortableCompressedTexture2D_mh0xm")
 region = Rect2(116, 72, 58, 36)
@@ -28,6 +24,10 @@ region = Rect2(174, 72, 58, 36)
 [sub_resource type="AtlasTexture" id="AtlasTexture_kxysi"]
 atlas = SubResource("PortableCompressedTexture2D_mh0xm")
 region = Rect2(0, 108, 58, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7x4yt"]
+atlas = SubResource("PortableCompressedTexture2D_mh0xm")
+region = Rect2(174, 36, 58, 36)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oamol"]
 atlas = SubResource("PortableCompressedTexture2D_mh0xm")
@@ -72,9 +72,6 @@ region = Rect2(58, 72, 58, 36)
 [sub_resource type="SpriteFrames" id="SpriteFrames_uo651"]
 animations = [{
 "frames": [{
-"duration": 2.0,
-"texture": SubResource("AtlasTexture_7x4yt")
-}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_c5b4g")
 }, {
@@ -83,6 +80,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_kxysi")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_7x4yt")
 }, {
 "duration": 2.0,
 "texture": SubResource("AtlasTexture_7x4yt")
@@ -168,6 +168,9 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_68pkx"]
+size = Vector2(12.862253, 29.5)
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_68pkx"]
 radius = 4.0
 
@@ -201,6 +204,15 @@ metadata/_aseprite_wizard_config_ = {
 }
 metadata/_aseprite_wizard_source_file_hash_ = "9786faa3488b1eb8160a810ff280c6fd"
 
+[node name="Base attack" type="Area2D" parent="." unique_id=59279606]
+position = Vector2(-1.9073486e-06, 0)
+scale = Vector2(1.048125, 1)
+
+[node name="Hurtbox" type="CollisionShape2D" parent="Base attack" unique_id=445450142]
+position = Vector2(20.03578, 4.25)
+shape = SubResource("RectangleShape2D_68pkx")
+disabled = true
+
 [node name="Physics box" type="CollisionShape2D" parent="." unique_id=985839302]
 position = Vector2(0, 6)
 shape = SubResource("CapsuleShape2D_68pkx")
@@ -230,9 +242,11 @@ sprite = NodePath("../Sprite")
 body = NodePath("..")
 metadata/_custom_type_script = "uid://i5o2ga1u8ho5"
 
-[node name="MeeleBasicAttackComponent" type="Node" parent="." unique_id=247601228]
+[node name="MeeleBasicAttackComponent" type="Node" parent="." unique_id=247601228 node_paths=PackedStringArray("hurtbox", "area")]
 unique_name_in_owner = true
 script = ExtResource("7_mh0xm")
+hurtbox = NodePath("../Base attack/Hurtbox")
+area = NodePath("../Base attack")
 metadata/_custom_type_script = "uid://c7u2hhxq2xx41"
 
 [node name="HitboxComponent" type="Node" parent="." unique_id=1384438127 node_paths=PackedStringArray("hitbox")]

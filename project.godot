@@ -26,6 +26,10 @@ window/stretch/aspect="expand"
 
 enabled=PackedStringArray("res://addons/AsepriteWizard/plugin.cfg")
 
+[global_group]
+
+allied_damage_source="Coming from player and/or allies"
+
 [input]
 
 Jump={

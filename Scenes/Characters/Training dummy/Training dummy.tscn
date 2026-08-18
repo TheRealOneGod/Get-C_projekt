@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://c15jjcgus22e5" path="res://Scenes/Characters/Training dummy/training_dummy.gd" id="1_8kbx3"]
 [ext_resource type="Script" uid="uid://r4utka6vxxf4" path="res://Components/Movement_component.gd" id="2_i6w2e"]
+[ext_resource type="Script" uid="uid://ca80gua4eoisn" path="res://Components/Hitbox_component.gd" id="3_g8wrb"]
+[ext_resource type="Script" uid="uid://76fb74nrlku2" path="res://Components/Health_component.gd" id="4_4qoro"]
 
 [sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_e4wqg"]
 _data = PackedByteArray("AAADAAUAAAABAAAA6AAAAJAAAABiAwAAUklGRloDAABXRUJQVlA4TE0DAAAv58AjEDegKAAZyE8mfbQS1Y4aRAIkNA/6P7rADpkIxp+JUQH9W5r/AHifCV9kZdYOJMm2HbfNIxRhjK8qzlEYaJxWK/AC0mHOdH//axAB+j807jKJ6L8Et5EcSWLOeafKqvsE3kwn50xGDenr3ZmM6rgl1nxRa17JqDmNviUhozjSUxo1invYMQUyyuYgquUiPtVTuMjSM4rbEsMFWfpFNV3ErfJnb4L0jCIXwXAIgp5RDRehFd2b9ukYxS7CzO16RfXbUkTPqMaL2PR94aTeoWMUuwjGFT2jWi9CPcr/SpuiYxS7CNJEiwAe9oHzPaOaQw3oGUUugvSfPuq1NTnn+Xy9O4+6QtZ0K/y65rWbnHNXw66wSbHMKTW/Nv44TV5DTMG2wvF8qqdwkcWi22vIOaMJF2Tp9xrMx7G5Vf7s30IoQr+GXhyCcCukX4PxODZa0fu39mtrskIXenEA6BU2fA1bfZzqPZjFJg+bfA023mTT94WT+upbcoXca+AkZ3Rt8rBbvobtVgYXUnqEepSXtmmTh028Bkb5M1E45ApbvobNF7Zr2iuCHNuAh33gPCmCcQVDYYHaPi1WSN6M6ThbFdHHFb3gYKzaHMf6GoZFHqennit884ri5snFzbhecSMpTCgmkQk/reWc2ao2TTGItAz+endmq5o0pSCL5TijcwAaW0krZa1E43GeHrkibBXV5IzBjSS2ihDNmvxPiymwVfamaD6O1ad6ChdZ2CpzkyOO04ALHBeGcav8KW5GZGGrbE0ekTlObTFzCAKAq7JRTQ2EY1rRowdorrI3QdUzwXVIsnIkR0ATySqCE8EAaDG5Sziw6fvCSb07YKwimgAyuPgegojJFZwr+tm/h0eoR3kxmx7djK2KaQIbXF2MLFMxLR942AfOg6ximsAFw3acw2Kmimvig1/k3t1/9Kap74hgwgkzShdZ5vv+HeYTsWDCcRhNzpmMGtLXuzMfFZ8JK2ctuBnBzfaDicUZ/yK9DuVTPWTUNiXVsX7hVvlDRqmf0Wi/Uetb46IwLTzxNn1fOKmnop4D6lHe2qZU1MDcPDbgYR/AR0dEDTeHx7F8hld+ZlN/ZD6I6TIhpDShEKckmJCITPnVMuNvGfkHAAA=")
@@ -165,7 +167,7 @@ animations = [{
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_68pkx"]
 radius = 4.0
 
-[node name="Training dummy" type="CharacterBody2D" unique_id=919666280]
+[node name="Training dummy" type="CharacterBody2D" unique_id=1004925250]
 script = ExtResource("1_8kbx3")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=911861671]
@@ -200,3 +202,14 @@ script = ExtResource("2_i6w2e")
 body = NodePath("..")
 sprite = NodePath("../Sprite")
 metadata/_custom_type_script = "uid://r4utka6vxxf4"
+
+[node name="HitboxComponent" type="Node" parent="." unique_id=1232658713 node_paths=PackedStringArray("hitbox")]
+unique_name_in_owner = true
+script = ExtResource("3_g8wrb")
+hitbox = NodePath("../Physics box")
+metadata/_custom_type_script = "uid://ca80gua4eoisn"
+
+[node name="HealthComponent" type="Node" parent="." unique_id=1129218241]
+unique_name_in_owner = true
+script = ExtResource("4_4qoro")
+metadata/_custom_type_script = "uid://76fb74nrlku2"
