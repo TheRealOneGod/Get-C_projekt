@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://dr4q22657ieh3"]
 
 [sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_tpxag"]
-_data = PackedByteArray("AAADAAUAAAABAAAAWAAAAB4AAAACAQAAUklGRvoAAABXRUJQVlA4TO0AAAAvV0AHEEegppEU6ATc8VigpgO/mESMmkZSoOsPkPF3+DeCGBKljaRAp04dn8KBp//qUASCEPlnrn8CgJo7v6TQ8zc2XW+9creB29ra2kbagNzr30CHCSx+mdqBARx7VWpN57kB5dRG9B9t27ZR9oBFc0VGKc0poZT+ZiAQiyjwhIietLaH8P2e+whflRIai50RTWu7hEeoh9A1iGNr3kV9X/yfgTDzvTjnZJ28MiG4lKC15ro0fQRt0F9CrkZEFBfXNYhSJ2P6CCFxbM25aCX3MnIIADAoACrfQwA/tgI6U4keArBjaw2Lxl7GyDIA")
+_data = PackedByteArray("AAADAAUAAAABAAAAWAAAAB4AAAACAQAAUklGRvoAAABXRUJQVlA4TO4AAAAvV0AHEEegJgCQhij0b7Lh5aPB0DIKGhCC9G8lAUEUcM+mGAAaKK1s0wmiHQQT2INAECL/vDVQAIDer7ZMtNfXw2ec2uQKJ7Jtt41hqJmxUHhfgNsGVGBQRtT1B/b8v25J7o1G9B9t27ZR9oBFc4VHRDt6EtFtBMIzA0B4AIB++lkLgbG8jcDeLiHIoDEY+FmTsDe1EJoG3LbGXdT2xfcRCCPfy+Fw+BTOKx3CwSWEYfgN07KNEJagr6ZDAQCA10PTgGnoTNlGMOG2NeaimdxLz3lyzn9ccV7pFgLXfVO8MRW2EPhv25rDor6X0TMP")
 size_override = Vector2(88, 30)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_j87qw"]
@@ -79,7 +79,7 @@ animations = [{
 }],
 "loop": 2,
 "name": &"default",
-"speed": 5.0
+"speed": 10.0
 }]
 
 [node name="Health bar" type="Node2D" unique_id=1516286208]
@@ -87,7 +87,7 @@ animations = [{
 [node name="Health bar" type="AnimatedSprite2D" parent="." unique_id=2079852595]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_8utl8")
-frame_progress = 0.18956959
+frame_progress = 0.32062265
 metadata/_aseprite_wizard_interface_config_ = {
 "pending_changes": {}
 }
@@ -104,4 +104,4 @@ metadata/_aseprite_wizard_config_ = {
 "source": "res://Aseprite/UI/Health bar.aseprite",
 "source_uid": 4206848271478685191
 }
-metadata/_aseprite_wizard_source_file_hash_ = "2e7e50dde23751fdaba751e4394e01af"
+metadata/_aseprite_wizard_source_file_hash_ = "0f76162f915246583d4a5d68325050ad"
