@@ -28,7 +28,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_dma8i")
 }],
-"loop": 0,
+"loop": 1,
 "name": &"default",
 "speed": 10.0
 }]
@@ -52,7 +52,7 @@ metadata/_aseprite_wizard_config_ = {
 "scale": "1.0",
 "should_round_fps": true,
 "slice": "",
-"source": "res://Aseprite/UI/Main Menu.aseprite",
+"source": "res://Aseprite/UI/Main menu.aseprite",
 "source_uid": 5784443366413075835
 }
 metadata/_aseprite_wizard_source_file_hash_ = "8d0a1c7529e1bb1db619c0cd7b0abd79"

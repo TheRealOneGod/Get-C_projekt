@@ -1,150 +1,717 @@
-[gd_scene format=3 uid="uid://cgjhhkjs7ts5u"]
+[gd_scene format=4 uid="uid://cgjhhkjs7ts5u"]
 
 [ext_resource type="PackedScene" uid="uid://c8a0ro7yqfs4a" path="res://Scenes/Characters/Training dummy/Training dummy.tscn" id="1_pqpas"]
 [ext_resource type="PackedScene" uid="uid://uuegsrqt6l5d" path="res://Scenes/Characters/Test character 1/Test character 1.tscn" id="1_qog7b"]
 [ext_resource type="PackedScene" uid="uid://h00ee7fb58p0" path="res://Scenes/Terrain/Grass block.tscn" id="2_h5fy8"]
 
+[sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_pqpas"]
+_data = PackedByteArray("AAADAAUAAAABAAAAAAUAANACAABSAAAAUklGRkoAAABXRUJQVlA4TD0AAAAv/8SzEAcQERFQ0LYNU/7wu+OI/mf4z3/+85///Oc///nPf/7zn//85z//+c9//vOf//znP//5z3/+878aAA==")
+size_override = Vector2(1280, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dwsnk"]
+atlas = SubResource("PortableCompressedTexture2D_pqpas")
+region = Rect2(0, 0, 1280, 720)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1gyu7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dwsnk")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_dwsnk"]
+_data = PackedByteArray("AAADAAUAAAABAAAAAAUAANACAAAwBAAAUklGRigEAABXRUJQVlA4TBwEAAAv/8SzEA8w5aM51fMf8PBb21Ze29q2dQoGJiEQCqFBaISCd1yZGBQwfjSG0GSc3+tSRP8noH/+//z/+f/z/+f/z/+f/z//f/7//P/5//P/5//P/5//P/9//v+XZ8CTWQIKj6bzBTwcz+eewvnsY/V45rFyPP1YPh4ej6cLz+F0foN6OLtBOZzZIB9ObxAPhx3r0cIW6Wh+C5ST2T1wHcxsgnwuvQvSERoL9o2/z6Fzho2AX2cQWfxWQPllABKL3QxIv8oBQGYxUjDDxaKloIbCgu3juzz4MFaOcBYHIDP5SePwR3EAEJncpHPa/fAii+kAZIoZIos5iMG89u4BXAQ1JBb9gvYWjeXVuwVQCBgzC46hsI69K66LI7yhvgO3iwOAei9MCod/Q+H447EAzsZROexvCAAecs/5SeMwb7gYNMbyhGXp9x2ffkOmeSwTn9mlc+KNiaZWABqT5ogEO0SO8IpIsiBeLIojEcyQOPwrQAJ/vAHOTNBD5nDvaASzg2e5CGq4OOw76r2AHRxLIWAsHOYd1z29hWWp98Kkcuh35FsOj64MS+NoHOod8ZbaQ7P0+37SOfHStjJ4eKU4IkfiCG+5Fni8LcCZOC4O/xZMHLYJLJnghsLhXrNtnTmWi6NxmEPYDezQOfWvKzPDUhgii/p110yzVIIBkDgCDqE20AAyh/95eQbWxnBxuJ+XJmEHBaBwmJ8XJ56nEwGgcuifh4ndIAyNA7+/DWYDP3TGcIA6aJZIcFz+AGVQG1gAkcMeIPfeAzYwABKHOUDqvfsdNIDMoQ+A3rvlSQRw4YS1d71BGC6GcITcAzZwQ2FwR0AzO5ihMtgzsBPAZcRgJ41BScFi2hkhBT2JDF4Mis2JAdPEYKXgZ5lBS8HxKSnY2cWAs8cbelZoXgxqVmlOCgFsRgp+0Wj6cFi5RacrKZhZpAVIQbP547WFmiWak0LAPNPM8erMLy6aloLlw/HLzCwKKZzvmulFJXkxgM2eL0/CqpHM+dLErzpZny9O7CLSIMCJYQsSaINeJJKTQB3UIpOsBErvPWB5kYwEcu/d8ykJpN67XRUSRNh716tK8TKoPWDdKE4GuRk+K4P7narFEUlKHIkEcWaKF4+Tx0Ux8igULY9KUfJohAB5dqKXR6Q48Rh5JIqWR6ZAnhchCKQQvEAqwQqkEYx4tEA6EfKMhCCQRHDisQLJBCOQi6DEA4GWe148TiL1nhWPFo+SSLsH6XjxOPEYkfTbWjyQjhePFY8RjxIPpBPE48RjxWPEo8QDobaVF48TjxWPlkpdKfFAOl4sZeHEY8VyLbR4lFjyLECsaebF4+QSZ0YumGnBtIkSTB0CBFsGL5lrcJLJg5FMHLRkMEC0tXcvm6t3K5vYu5INisPn/8//n/8///9ZBw==")
+size_override = Vector2(1280, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1gyu7"]
+atlas = SubResource("PortableCompressedTexture2D_dwsnk")
+region = Rect2(0, 0, 1280, 720)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uh5qq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1gyu7")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_1gyu7"]
+_data = PackedByteArray("AAADAAUAAAABAAAAAAUAANACAAAiAgAAUklGRhoCAABXRUJQVlA4TA4CAAAv/8SzEA8w71M+7/Mf8JDj7H/eNhQ4cOQFDPAm0ZUydqO23qLn6Mgb5ArcuhXstwIQfvshxxL5s4BOjOj/BJjh/+H/4f/h/+H/4f/h/+H/4f/h/+H/0dPn07NqWqyQaiUlJ+TqJH32SrwkgpKgaJFSJSUlCUlZScYrKkoKTtGqZNVUmWXklajoSpRRXkER4FWs32DS8xEIKirg9FRgVuL1XIGoAiDo4R+vIf/DJImgoWw4TbOGdcP3c9nr+k/UUDdCP0+PYu4n7rRwGhZ2ShvzickbQUnoJu1VNnwXl/tWIOLPw7xDdMt8dd3keIjrYcHeVWZjTDXdFuw+ecP2kHB3ZWuMedeT2ydtTD1k/F1pMl0X/D7LpxfA9FgId/WeYdrFpPfgu4BgnqUksPssNjP1kCHUVykV3D7GJGd6rPw7KbmC32uxPXxg0yrhgD7ZdkIWIAhZbnghCZibuTSQBGUgNvPUQL4RhBSAVpZ4XObmLGRtKXE5rNziMWXmw9Y3TFpiK4V4WH2D1VHaoiGnI5+eBMyt5AZWRQYIrRTiYQXClhVSwLeyMh+WozF1YxJizGpbqQ1sJ8BILVMrV2IjJhO0ZNMq0IqpTku7LT3qMxTPzXJ6EnBuMmBPjzs1BfCnZgXCf61CxZ+aHNcXd2rSZBZ7aob/h/+H/4f/h/+H/4f/h/+H/4f/h/+H/4f/Bx0B")
+size_override = Vector2(1280, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uh5qq"]
+atlas = SubResource("PortableCompressedTexture2D_1gyu7")
+region = Rect2(0, 0, 1280, 720)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bsf3m"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uh5qq")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_uh5qq"]
+_data = PackedByteArray("AAADAAUAAAABAAAAAAUAANACAAAYBAAAUklGRhAEAABXRUJQVlA4TAQEAAAv/8SzEA8w71M+7/Mf8KAjbVscSfoJDEyOoJu0LtbRMLvZR+ijjGY35wjN7GYzaxFRNJ+RCQL+X6rZFdH/CaDL/5f/L/9f/r/8f/n/8v9/qQd9csKjPTkJ68kpcCcHwJ87HoD6Myd+AkCfmfzV2cFrQYKWyONWiJTsySlYJdoE8YATKL4VZJMpQxYIhPtKhCCSF0eJs4kSRQoVLYYWJ1bMk8mIkyr2SRQAWHFyZREhnZ4MYDk97tQUABCnnCYrAm6VNJDnGy2UkePRyuJrXxkxsAr16yKHEwqOgmZXZAMly83jviyxqazcgki5RcFxixUlCs6ObwLALT3Ftj2KWa5YwbQQqyRhzyIEBHNSKLmgTo/mlWqan7fdzFkIa2WTJdYMv4Ru9ixkqHtelnAEy1ko0PdIllT7aBEki5Jr3zl2gLn3PMn0CMUsNuCtKKUGaGa5tmG3PQmoBWHQanh5AGsvcw42ALgT5XqjWcUb3UmLAcsq3ZibJNgq1XeaVWlyrPKN7fRoz8WGjiur3ARW5WYhotjDsSryZNHUVMse3K5EVHqAkwebze3Y7j2XJ/CJUG3hjoMidFWMIpPnRAm6B2DESUyg98WK3aTJO2jWDfZFxtopnIKIj/EWaEuVRRzsVLNk3NV9Yh/iu+0xs+C+6bJKE/esk/ghnR2jtAeT2SPSc2xd4piVUd5l5lrmsUcTuoQxmk3QZZd9JpNlk15i90tMEbtsYxY2BT31OG/zfCsbdDXjAuq2yR+HHZda/DKL4+KZ5AYTXAMdxzJVhpoELBaijUlp+ArQDUWazXVbZ8JEigGgerlxaDdibYDuhVEFBxFH6DEee61YCTD0qpMdE7gYHgG91ZA4AGPtfBlA6mZEciz6L0MSl9dQs5Uh61Sm5gcBRhI3JPOxR6UPCTItT408Rom0HkXqR9KUMXYmJZXH2HVE7FeECYMwE1U9hImj1IDQLYxbjsLvcbUoTRqlB1DZsUxkD4OoNJlakiaPMmNyi6GJzIGkhpUa8zh1IOHm1Y2eig7E36iE6GgmdyQUAEu7xUmj9KC+49bDS8PsbHGUEkjP99DvgUkcZWn2gO/6/QSAjs8j9PsOcBzCmDcw09GzrSm3fQYsHPyY96DmI2pZ9xkOVIbQC+KYAXx9R6eGB+AdWGK57XG5wRHTDYCOABy1GEAVzYNyiypY6XVt4UIAFN2NeKhogBIxTQ0LJVjyNcOGcstPtQJiG2orUYAmKsASAUd8E+h+wHt3ElR2fPwSfrpxVE2WKGAhxmGteFAB4IKjuPC5n2Bqtx6Gk7cVekYJwOIX2gy3/UVxat8AGDq1AOjy/+X/y/+X/y//X/6//H/5//L/5f/L/5f/L/9f/r/8/78OAQ==")
+size_override = Vector2(1280, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bsf3m"]
+atlas = SubResource("PortableCompressedTexture2D_uh5qq")
+region = Rect2(0, 0, 1280, 720)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t1w82"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bsf3m")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_bsf3m"]
+_data = PackedByteArray("AAADAAUAAAABAAAAAAUAANACAACKBAAAUklGRoIEAABXRUJQVlA4THUEAAAv/8SzEA8w71M+7/Mf8KDc2lqd0fkQA4aUQCmUBlIKCx2kBaI0QN5ciXAG9o/NB/5u3o7o/wTQ9IJTRWJtZ1YuOPdiiR+CWNoHSCXisxJKHtBCKQNGKHXACqUNOKH0AS8UDAaZRPGkEcgk/+lThpRIqniaeLp4MKwlEsWTxoJ4oAWSL1jxePEEgZQLkI8SjxaPEY8VjxdPEA+UeLR4zJ8+VjxOHPlPJy+O9KdP/NOHxBPF5f50SeKy4jHiyFIJ0GflkpZB/QFwZ/WSkgEA+LMmknjAWRdJPlEnEEk50Yd4jURYhWQORSbtxB76pSCDPhBx2UsjicYRUb7mZICBcs3Kovh6Tcui449rShKecKMnSYR0QyBRIIvnR7n0szv/+sKfJfirK/6JFf7y8uJxf5KkCVY8RjxKCHkCSSeIB2tAbydhol4hw22nzjArNITt9Bl+hQ7sJmIqv/gtgG/8VjLmanYFAH6H2kmbZNjVA6B3gsmWXT+zG4mzHDucu42kWZ5b/OA3kmeF5yuzwK1+CBup0xQzfN5I20vcUZ+meeUdYS9lQAmlbijNM0+XN9O2E33ZTN9OwRfhVDB8uL4dDNImIZ34VaAXCZtI2+kDfhN5NwmPpDjlEbeJsps6YjfRWBDnNmI20TkEVn1E76ATgaMHJ4zSBhNMZAGYJcIOMmxi4vjEEbeDCraeTxrxO2h8wlN1PlgiPItik0ewAzDWzxQ5GfHYJdTXT+LkvhqKeNpjeTZdPBAVSSRuJnIKXJKszKNgCb8ebSiPhQ10TmoF/Gilg7Bc42TXwHKVU1hEr1Y4gUNTN5gn0fMiLLVL9knMvARH/ZJ7EjuvIESIpgLpmn8SN68B318LTT+HXwNwgujA73d4QeDulbriFaal29Q6CW4v+Ta9TgF4YVq9zaxTgZ95qVn9NrtOA3c9KeJ2t05nZybl+3BWDD+wt5PKBEUFRN0/XZtgMmAIgV3kh0mYaAHYBKjALC1gpqQZR5+BH6B55QXslDorFOB3mN35KX0WCgA4XmWBMAU8/e4wIzIJD5Z2VFdQEzITbE9PKFz0c1Uu5rkaF7c7s55/rs4lsGrSiXgkcEqbAVvFqIiniqctoTegvyK6eLCkEg8Jru8nLhHE43egduCJ6C47oz2JJqJykxGAaQh0TEAdCx0AzaxsaKHvDhShT6i5POSpwdPUwiUs8uWgOuBoOB4s9QNRgZ2T90MjoQAwVAC62ABHVABYogwzJ3Hxa9gMBLo/AZ6ICDQ3cnFrqAiYCdShD9O5GE79gyKiFmj9zkRzameadll5BOLnaJuJRSDWFfANtNGbfr9geRXA0VbvMVTHFK8E6L30OwIR1Q9fAE+8IzTttQ24/METEUVYIqIEaGbUaLP1JFRAxw/28LkGevhy4uj4wYw9fx5qZyTLdGJPCqBJnPHEnEQEEuiQUPtBS6YelGTKgSQbAXjRUAOcbIials7r/9f/r/9f/7/+f/3/+v/1/+v/1/+v/1//v/5//f/6//X/6//X/6///wMTAA==")
+size_override = Vector2(1280, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t1w82"]
+atlas = SubResource("PortableCompressedTexture2D_bsf3m")
+region = Rect2(0, 0, 1280, 720)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hwria"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t1w82")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_td5br"]
+_data = PackedByteArray("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")
+size_override = Vector2(1280, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m6c3g"]
+atlas = SubResource("PortableCompressedTexture2D_td5br")
+region = Rect2(0, 0, 1280, 720)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rguru"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m6c3g")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_nmnce"]
+_data = PackedByteArray("AAADAAUAAAABAAAAAAUAANACAABiBAAAUklGRloEAABXRUJQVlA4TE0EAAAv/8SzEA8w71M+71MU8KDc2lYkwPmIBUtCIBRCA0fQITWSA2k8L41nLCHeosYPv/Dsiuj/BNDr/9f/r/9f/7/+f/3/+v/1/+v/1/+v/1///1tl04sT4RcnA3ZtKhCWJgKAWpfky0avS8XvGyNLcpI07FpZKiTpe06Wht+1HNj3snTAiREPgiwAvBRIBxAlAghCZHwnUgIAIQpOipI3SoZ6RomjZWhClY2RoUtmZYBQVY4oVMLaROy7ZSmiJJG6WEaKCLGsFEkuJ0WWy0tRjiAOpKgnjDhKiHbCiqOF6CecBPmcEQInvQTlnJUhnglE0c9WzzkZ0hkQFShJvAz1lKIKvRoRFxrMZE2ecqXDShJEqOd+MoBbi0DtHD4CfikydL8AICxFg8HSRODD2iTg0w2YrMqSca8kfrqyPFWiIkuTKJ9z03WJ0tFHAHY6SBSPTAMMT3J8USQ6UgXQPBV8Saa+5ykDiqdBsWWZyp4mAoi3Q7MVmWhPEVXHBBi2KlTcIf4IWLYmFFEF3AAJcGxdrAjoATLg2SDWoBkIXPH54JjSwxUAmMQ8ieLJt9kn0TzlNvckZg7/JJan3haexPG02/AkniXifvUggSUx6AcBS2YwM0UvSGGwMxUoOSqDm6lCD6Y4mkwNZjDN0Rn8TB12MHNfcpAJcMPUHXtfBWeYKAJ+MHdfEyoBQYTkqLNgLgzTWCoIq+Bv6viMSc+TAahROkcEPmdyc+lRwJGA75igHy4D33OFqcwgkSNiRD2THSRxlCHcTG6QzFGH8DP5+doQYZY2UOHoQ2CSiK2eDmOqOdJOGKMxxEH0HHkHeoi+5+5Ig5g5yp7fJM8EhjyInaPuAUTUoFjSfG6OdrSrWcp8fo5+wbDUA48bynNYln4A2FmCBI4j4mSYBXPgoudIZ/BggaOdMisScdrNokRL5/xzgSGfw4qUC3pB6gVzJa9Au2CfI47TL7jl8VcSXyhPE65EPhc3JEBgwNUrxGepPI260tk0xafRVxqbIgKCBH4cc6WyEVGHl8BNU7gCETU4Cex9kStxeSKqsBKY+9Ile4U6kyOiAjNFuqLvy2xUeCwRZWgJ1H2FL/EYIqJAAgS6v/JRZ9GbSa/YqSqLEoOmSiwkgSbmNgB1hiCCGs2M5SUIJJqb7QsAXjY7G0XADafHMjPFDRXooT4AUGPp+UY8pxpAdzYGNVkYo57xVBAGo6k7/HCKIvxYYa4GNxoREdwt9T4/V4UdoxyFTdW3lPvsXAVmjHzkNzfn+8xcGXqMdGQZ0n16Lgo0ZjwyDBHw9Y6vAj3jkWIgwMZLXwCKHrLveeLsUJQumAjQU5Y9zVI8UTzniZp7DGqbQPyXnjQjZNgB+nNRtzRkfbBRy/Kk5aFTbk368tTlSWfsmtAZsyjthF6UvPm0UYtCG90B0KoWAEQdYVki4IgK7LJQgabX/6//X/+//n/9//r/9f/r/9f/r///iAMA")
+size_override = Vector2(1280, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_td5br"]
+atlas = SubResource("PortableCompressedTexture2D_nmnce")
+region = Rect2(0, 0, 1280, 720)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m6c3g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_td5br")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_35bod"]
+_data = PackedByteArray("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")
+size_override = Vector2(1280, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nmnce"]
+atlas = SubResource("PortableCompressedTexture2D_35bod")
+region = Rect2(0, 0, 1280, 720)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_td5br"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nmnce")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_b7m6c"]
+_data = PackedByteArray("AAADAAUAAAABAAAAAAUAANACAADEBAAAUklGRrwEAABXRUJQVlA4TK8EAAAv/8SzEA8w71M+7xMS8LCbbVskUNnHRUBICZRCaeAeWoKliJGhJUh2QnHnXCJvMOwD8+//RPR/Auj1/+v/1/+v/1//v/5//f/6//X/6//X/6//X/+//v/XbWIPx0I+HAf1cDz0wwkwDycCDycBbBkPeaIM8KAWSTAnAsAzFsnAoT4D2BoA2HksgA8AX8IC4GcCIJZwAMSx5BIegEzsNK6klggAvoE8lF4i4qoOZRbSj8c8mFTAobASezz88YhDJfZ0IJ+Kral15Kn0AvFwZh11Kqyjj8WmBZTNsfiAINpyBQ8i6zbU2XOAabIN/CyhQfQ5oMk1iKNYNMo+D7AW3yCPElpUXwAEGkKDOkps0X0R+AmiFhvMUdKUBAByBNhJcotp8eqSL6pi0coPgvaWBCKyuOpKaBLn8B2sIYMRuYKpxCZ5jtDBGwBO5AuopCZ1jtihahZQRKHESrlJnyN16JoDQJQ60GzOkTtMzQMQlFucsW04B3prAYAmlDkRRXzfwU5hu1glAsB3TQm9/FS8ki71S+4Sp3BdYhxOlbrkMHsqi25VyV2uT57B/biOP1TEIowo9KkzpAG6goeQ76TPgFWIAu4XxB3sKoYobyDrO7hVwAMGmmU8quYOfpmx66QaToNlcgPbg1qILRLQyG8QNucMEeUW8TgiOEW0yj3Ikl2BzwMEYT+i5HbgAWU3xEt+BxHQrk3tgZXCCmJaAozfEJXjDjKAcDc/wFTSCnIaAHzcj67kDdhL5w50FhVswG3BdSmq2iXULL8F2yVqbgdhC9ShMtX9Y8htnBrDEnpWHCDvkJoYbSbtISLXGC1nZuU9OGUritrjBhwGijsQUYW24/eRC/oOmBRHfAXA3CABIkLcgs3JI4p8vQjQwB1guFwvQE34OIlPseP0ehZ8wq+TxBQ/Dmy5wZUPNwoTxFZ+miSnpAlyKz9OUlMw0ewhlL6dpGfYGdjK7Cluij6HmeGngO/Aj1BrhTlqUzL2YUaagx24yt8t3C+VJ4l8P1v5q4mWwnRxO6r82SIo9bFxdp68Xy59uKiCoryMxYLqfqn0w4UV9EJhBX2/WPoagKaCGcFHxRXM/UJJAeCUL2DrpBVwP1/JMESpwAeIUXkJdjtb0gmSKBbEOjgCpZLXRBQKahl7CCILwNDVF3Tqk4PcGnwHBAAFVzAPxhbw9+PIANiFUmGgGuTPkRr8g+EF91BiAz0YUUrPJLTE/bBtyJJ/Jr7FlQylFdwY7jdnS90rGaIe2qIDoEqUb2aIKGzINqUxcpAdoYjItZn9hJVoBCciyvuhJr9U7jNUzMB3+9EVN0aMSn2iFCDJl/Qmcosdw0fFPl4q5oLaD+WVQuljzVBzKMhNpKY0hI2yADiRr8k2chexobhS1dV4h73wDfkbUMVQ74VtIja5ITQ7l1RXBkAbsiPMtFiSXQFQG1E1ygP0tFBiXTsNbWmAmuYKhk4RB8hplC96Zx6QDX6AmBcuYmcOEA22i2Wa7y98ZxbgDdSjaMkL2xkBrCW2SVo0Q9PWM6jVN2l6iMk0uSb+FLxsotzA6ZmGmqKnWqPHGkv8uVAGoOn1/+v/1/+v/1//v/5//f/6//+PBgA=")
+size_override = Vector2(1280, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_35bod"]
+atlas = SubResource("PortableCompressedTexture2D_b7m6c")
+region = Rect2(0, 0, 1280, 720)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nmnce"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_35bod")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_hwria"]
+_data = PackedByteArray("AAADAAUAAAABAAAAAAUAANACAAAwAwAAUklGRigDAABXRUJQVlA4TBwDAAAv/8SzEA8wmjM3cPMf8JAc2VZdV4e6tjUkBIWi0FBoCoUQNPSH4vgrztls8WaPiP5DlGQlDHO0Yw00Y+CB/yDDs+k/03+m/0z/mf4z/Wf6z/Sf6T/Tf6b/TP+Z/jP9Z/rP9J+7UVTD0KiqGkdG1m/WkaE/bAPj9YehOfQ3j2Gx/2EZFuc3Ywusf9hGt1cd2H5wjnpBHNeeMJBqhh+qfI5XLgm8XrIQZZppKUq3zWw9pNfGlOhEQ24QWPqcans2iEw6fTB6VBPTmIxsU5cn2yfbED+abEwyDTwequBGD5F42iwcQ4jppbVN6q8Ctq0a7MEgUqaXZguRSAQLRyTVcqgSXjImVp4kryweouBX1AzfE/7WorkbCirBpz6wkTY3zYy0lzdilcDk1jbBnL4NGUm17LDjqyow0m4c71KN9uMtHTwUIzOj9PmK/KzzG6ZHp4HN3r0bMBL0qONXOKobugyi/pd2bWD//AKVhfos9I60f76q4hyHk9jDAwl8hd7dr05Sf4+x/7BXT/kLye1VMLk9sLJVt3kzsGCaPDiKG2GeHi95tWoGNL6xqsh/gF8O2Zq3HZPa/YoNNHV7uHPrq8+/2jmMbI5DJ8QeYQFT7OhSQfL0LubS7/GnozanWZoOqTwQ/93jz+I42ysmsY2UA6J7LLunNsXK5pBy8u+B9nAfdvF1eWhX3T55tRmNJLlrvfqIV1RV+2LI06tqj6W6tIMQpquklk4tCv7xSvF3R7i31XOkbOiRU8Ek71kfPp3G3xyeI0m11Bhui/OeW6xjqFGNbDtSW+OPizeT2eoUQhCP7tpJiCI5yq509tPnvq0jb9FQI6lJXvkIUtxNUxVpP8/4ttU7dbLe3ZxsIuX2BLfsdHT2MTx0+s/0n/+U85AfK0NhETm/EZH8c4hfNpTQVRw2Chl5OIbwC7HXGxMFZOVWBOlix63rNJSHi3S12gvJOJIQWO4BsOpJSGyHAyh6EjorXaS8Azvxblna3IpchZ8MGwTmsDvYNzcSDd2dEW6PdSYI2u7nfsiI7GoMDM+m/0z/mf4z/Wf6z/SffzYC")
+size_override = Vector2(1280, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b7m6c"]
+atlas = SubResource("PortableCompressedTexture2D_hwria")
+region = Rect2(0, 0, 1280, 720)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_35bod"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b7m6c")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_t1w82"]
+_data = PackedByteArray("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")
+size_override = Vector2(1280, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hwria"]
+atlas = SubResource("PortableCompressedTexture2D_t1w82")
+region = Rect2(0, 0, 1280, 720)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_b7m6c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hwria")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 10.0
+}]
+
 [node name="Room1" type="Node2D" unique_id=1502682762]
 
+[node name="Background" type="Node2D" parent="." unique_id=1314554570]
+
+[node name="Parallax 1" type="Parallax2D" parent="Background" unique_id=878669200]
+texture_filter = 1
+texture_repeat = 2
+scroll_scale = Vector2(0, 0)
+repeat_size = Vector2(1280, 0)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Background/Parallax 1" unique_id=1093919487]
+texture_filter = 1
+position = Vector2(141, 84)
+sprite_frames = SubResource("SpriteFrames_1gyu7")
+metadata/_aseprite_wizard_interface_config_ = {
+"animation_section": false,
+"layer_section": true,
+"output_section": false,
+"pending_changes": {},
+"slice_section": false
+}
+metadata/_aseprite_wizard_config_ = {
+"embed_tex": true,
+"layers": ["Foreground"],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"scale": "1.0",
+"should_round_fps": true,
+"slice": "",
+"source": "res://Aseprite/Parallax/Background 1.aseprite",
+"source_uid": 6963292211257506812
+}
+metadata/_aseprite_wizard_source_file_hash_ = "05da74846114d1aeb1c66fb64bee2d2f"
+
+[node name="Parallax 2" type="Parallax2D" parent="Background" unique_id=1061458860]
+texture_filter = 1
+texture_repeat = 2
+scroll_scale = Vector2(0.1, 0.1)
+repeat_size = Vector2(1280, 0)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Background/Parallax 2" unique_id=2051783122]
+texture_filter = 1
+position = Vector2(141, 84)
+sprite_frames = SubResource("SpriteFrames_uh5qq")
+metadata/_aseprite_wizard_interface_config_ = {
+"animation_section": false,
+"layer_section": true,
+"output_section": false,
+"pending_changes": {},
+"slice_section": false
+}
+metadata/_aseprite_wizard_config_ = {
+"embed_tex": true,
+"layers": ["4"],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"scale": "1.0",
+"should_round_fps": true,
+"slice": "",
+"source": "res://Aseprite/Parallax/Background 1.aseprite",
+"source_uid": 6963292211257506812
+}
+metadata/_aseprite_wizard_source_file_hash_ = "05da74846114d1aeb1c66fb64bee2d2f"
+
+[node name="Parallax 3" type="Parallax2D" parent="Background" unique_id=920889567]
+texture_filter = 1
+texture_repeat = 2
+scroll_scale = Vector2(0.1, 0.1)
+repeat_size = Vector2(1280, 0)
+autoscroll = Vector2(5, 0)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Background/Parallax 3" unique_id=1061716454]
+texture_filter = 1
+position = Vector2(141, 84)
+sprite_frames = SubResource("SpriteFrames_bsf3m")
+metadata/_aseprite_wizard_interface_config_ = {
+"animation_section": false,
+"layer_section": true,
+"output_section": false,
+"pending_changes": {},
+"slice_section": false
+}
+metadata/_aseprite_wizard_config_ = {
+"embed_tex": true,
+"layers": ["7"],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"scale": "1.0",
+"should_round_fps": true,
+"slice": "",
+"source": "res://Aseprite/Parallax/Background 1.aseprite",
+"source_uid": 6963292211257506812
+}
+metadata/_aseprite_wizard_source_file_hash_ = "05da74846114d1aeb1c66fb64bee2d2f"
+
+[node name="Parallax 4" type="Parallax2D" parent="Background" unique_id=618058227]
+texture_filter = 1
+texture_repeat = 2
+scroll_scale = Vector2(0.1, 0.1)
+repeat_size = Vector2(1280, 0)
+autoscroll = Vector2(10, 0)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Background/Parallax 4" unique_id=1259683222]
+texture_filter = 1
+position = Vector2(141, 84)
+sprite_frames = SubResource("SpriteFrames_t1w82")
+metadata/_aseprite_wizard_interface_config_ = {
+"animation_section": false,
+"layer_section": true,
+"output_section": false,
+"pending_changes": {},
+"slice_section": false
+}
+metadata/_aseprite_wizard_config_ = {
+"embed_tex": true,
+"layers": ["5"],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"scale": "1.0",
+"should_round_fps": true,
+"slice": "",
+"source": "res://Aseprite/Parallax/Background 1.aseprite",
+"source_uid": 6963292211257506812
+}
+metadata/_aseprite_wizard_source_file_hash_ = "05da74846114d1aeb1c66fb64bee2d2f"
+
+[node name="Parallax 5" type="Parallax2D" parent="Background" unique_id=601463276]
+texture_filter = 1
+texture_repeat = 2
+scroll_scale = Vector2(0.1, 0.1)
+repeat_size = Vector2(1280, 0)
+autoscroll = Vector2(15, 0)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Background/Parallax 5" unique_id=1772885267]
+texture_filter = 1
+position = Vector2(141, 84)
+sprite_frames = SubResource("SpriteFrames_hwria")
+metadata/_aseprite_wizard_interface_config_ = {
+"animation_section": false,
+"layer_section": true,
+"output_section": false,
+"pending_changes": {},
+"slice_section": false
+}
+metadata/_aseprite_wizard_config_ = {
+"embed_tex": true,
+"layers": ["6"],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"scale": "1.0",
+"should_round_fps": true,
+"slice": "",
+"source": "res://Aseprite/Parallax/Background 1.aseprite",
+"source_uid": 6963292211257506812
+}
+metadata/_aseprite_wizard_source_file_hash_ = "05da74846114d1aeb1c66fb64bee2d2f"
+
+[node name="Parallax 6" type="Parallax2D" parent="Background" unique_id=1841023430]
+texture_filter = 1
+texture_repeat = 2
+scroll_scale = Vector2(0.1, 0.1)
+repeat_size = Vector2(1280, 0)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Background/Parallax 6" unique_id=527452505]
+texture_filter = 1
+position = Vector2(141, 84)
+sprite_frames = SubResource("SpriteFrames_rguru")
+metadata/_aseprite_wizard_interface_config_ = {
+"animation_section": false,
+"layer_section": true,
+"output_section": false,
+"pending_changes": {},
+"slice_section": false
+}
+metadata/_aseprite_wizard_config_ = {
+"embed_tex": true,
+"layers": ["3"],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"scale": "1.0",
+"should_round_fps": true,
+"slice": "",
+"source": "res://Aseprite/Parallax/Background 1.aseprite",
+"source_uid": 6963292211257506812
+}
+metadata/_aseprite_wizard_source_file_hash_ = "05da74846114d1aeb1c66fb64bee2d2f"
+
+[node name="Parallax 7" type="Parallax2D" parent="Background" unique_id=333415354]
+texture_filter = 1
+texture_repeat = 2
+scroll_scale = Vector2(0.2, 0.2)
+repeat_size = Vector2(1280, 0)
+autoscroll = Vector2(10, 0)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Background/Parallax 7" unique_id=2118082028]
+texture_filter = 1
+position = Vector2(141, 84)
+sprite_frames = SubResource("SpriteFrames_m6c3g")
+metadata/_aseprite_wizard_interface_config_ = {
+"animation_section": false,
+"layer_section": true,
+"output_section": false,
+"pending_changes": {},
+"slice_section": false
+}
+metadata/_aseprite_wizard_config_ = {
+"embed_tex": true,
+"layers": ["mlha 2"],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"scale": "1.0",
+"should_round_fps": true,
+"slice": "",
+"source": "res://Aseprite/Parallax/Background 1.aseprite",
+"source_uid": 6963292211257506812
+}
+metadata/_aseprite_wizard_source_file_hash_ = "05da74846114d1aeb1c66fb64bee2d2f"
+
+[node name="Parallax 8" type="Parallax2D" parent="Background" unique_id=1932576274]
+texture_filter = 1
+texture_repeat = 2
+scroll_scale = Vector2(0.4, 0.4)
+repeat_size = Vector2(1280, 0)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Background/Parallax 8" unique_id=498480515]
+texture_filter = 1
+position = Vector2(141, 84)
+sprite_frames = SubResource("SpriteFrames_td5br")
+metadata/_aseprite_wizard_interface_config_ = {
+"animation_section": false,
+"layer_section": true,
+"output_section": false,
+"pending_changes": {},
+"slice_section": false
+}
+metadata/_aseprite_wizard_config_ = {
+"embed_tex": true,
+"layers": ["2"],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"scale": "1.0",
+"should_round_fps": true,
+"slice": "",
+"source": "res://Aseprite/Parallax/Background 1.aseprite",
+"source_uid": 6963292211257506812
+}
+metadata/_aseprite_wizard_source_file_hash_ = "05da74846114d1aeb1c66fb64bee2d2f"
+
+[node name="Parallax 9" type="Parallax2D" parent="Background" unique_id=1466809972]
+texture_filter = 1
+texture_repeat = 2
+scroll_scale = Vector2(0.6, 0.6)
+repeat_size = Vector2(1280, 0)
+autoscroll = Vector2(20, 0)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Background/Parallax 9" unique_id=526224286]
+texture_filter = 1
+position = Vector2(141, 84)
+sprite_frames = SubResource("SpriteFrames_nmnce")
+metadata/_aseprite_wizard_interface_config_ = {
+"animation_section": false,
+"layer_section": true,
+"output_section": false,
+"pending_changes": {},
+"slice_section": false
+}
+metadata/_aseprite_wizard_config_ = {
+"embed_tex": true,
+"layers": ["mlha 1"],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"scale": "1.0",
+"should_round_fps": true,
+"slice": "",
+"source": "res://Aseprite/Parallax/Background 1.aseprite",
+"source_uid": 6963292211257506812
+}
+metadata/_aseprite_wizard_source_file_hash_ = "05da74846114d1aeb1c66fb64bee2d2f"
+
+[node name="Parallax 10" type="Parallax2D" parent="Background" unique_id=1254653286]
+texture_filter = 1
+texture_repeat = 2
+scroll_scale = Vector2(0.8, 0.8)
+repeat_size = Vector2(1280, 0)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Background/Parallax 10" unique_id=829446504]
+texture_filter = 1
+position = Vector2(141, 84)
+sprite_frames = SubResource("SpriteFrames_35bod")
+metadata/_aseprite_wizard_interface_config_ = {
+"animation_section": false,
+"layer_section": true,
+"output_section": false,
+"pending_changes": {},
+"slice_section": false
+}
+metadata/_aseprite_wizard_config_ = {
+"embed_tex": true,
+"layers": ["1"],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"scale": "1.0",
+"should_round_fps": true,
+"slice": "",
+"source": "res://Aseprite/Parallax/Background 1.aseprite",
+"source_uid": 6963292211257506812
+}
+metadata/_aseprite_wizard_source_file_hash_ = "05da74846114d1aeb1c66fb64bee2d2f"
+
+[node name="Parallax 11" type="Parallax2D" parent="Background" unique_id=925828109]
+texture_filter = 1
+texture_repeat = 2
+repeat_size = Vector2(1280, 0)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Background/Parallax 11" unique_id=810506658]
+texture_filter = 1
+position = Vector2(141, 84)
+sprite_frames = SubResource("SpriteFrames_b7m6c")
+metadata/_aseprite_wizard_interface_config_ = {
+"animation_section": false,
+"layer_section": true,
+"output_section": false,
+"pending_changes": {},
+"slice_section": false
+}
+metadata/_aseprite_wizard_config_ = {
+"embed_tex": true,
+"layers": ["Layer 1"],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"scale": "1.0",
+"should_round_fps": true,
+"slice": "",
+"source": "res://Aseprite/Parallax/Background 1.aseprite",
+"source_uid": 6963292211257506812
+}
+metadata/_aseprite_wizard_source_file_hash_ = "05da74846114d1aeb1c66fb64bee2d2f"
+
 [node name="Training dummy" parent="." unique_id=919666280 instance=ExtResource("1_pqpas")]
-position = Vector2(421, 151)
+position = Vector2(421, 88)
 
 [node name="Floor" type="Node2D" parent="." unique_id=1241453715]
 
 [node name="Grass block2" parent="Floor" unique_id=1755050781 instance=ExtResource("2_h5fy8")]
-position = Vector2(8, 332)
+position = Vector2(8, 269)
 
 [node name="Grass block" parent="Floor" unique_id=1939532344 instance=ExtResource("2_h5fy8")]
-position = Vector2(24, 332)
+position = Vector2(24, 269)
 
 [node name="Grass block3" parent="Floor" unique_id=1641538191 instance=ExtResource("2_h5fy8")]
-position = Vector2(40, 332)
+position = Vector2(40, 269)
 
 [node name="Grass block4" parent="Floor" unique_id=646971458 instance=ExtResource("2_h5fy8")]
-position = Vector2(56, 332)
+position = Vector2(56, 269)
 
 [node name="Grass block5" parent="Floor" unique_id=1720722622 instance=ExtResource("2_h5fy8")]
-position = Vector2(72, 332)
+position = Vector2(72, 269)
 
 [node name="Grass block6" parent="Floor" unique_id=451769925 instance=ExtResource("2_h5fy8")]
-position = Vector2(88, 332)
+position = Vector2(88, 269)
 
 [node name="Grass block7" parent="Floor" unique_id=405438476 instance=ExtResource("2_h5fy8")]
-position = Vector2(104, 332)
+position = Vector2(104, 269)
 
 [node name="Grass block8" parent="Floor" unique_id=1862340055 instance=ExtResource("2_h5fy8")]
-position = Vector2(120, 332)
+position = Vector2(120, 269)
 
 [node name="Grass block9" parent="Floor" unique_id=1826169479 instance=ExtResource("2_h5fy8")]
-position = Vector2(136, 332)
+position = Vector2(136, 269)
 
 [node name="Grass block10" parent="Floor" unique_id=753888321 instance=ExtResource("2_h5fy8")]
-position = Vector2(152, 332)
+position = Vector2(152, 269)
 
 [node name="Grass block11" parent="Floor" unique_id=1089489900 instance=ExtResource("2_h5fy8")]
-position = Vector2(168, 332)
+position = Vector2(168, 269)
 
 [node name="Grass block12" parent="Floor" unique_id=1099783334 instance=ExtResource("2_h5fy8")]
-position = Vector2(184, 332)
+position = Vector2(184, 269)
 
 [node name="Grass block13" parent="Floor" unique_id=1824580082 instance=ExtResource("2_h5fy8")]
-position = Vector2(200, 332)
+position = Vector2(200, 269)
 
 [node name="Grass block14" parent="Floor" unique_id=1697387265 instance=ExtResource("2_h5fy8")]
-position = Vector2(216, 332)
+position = Vector2(216, 269)
 
 [node name="Grass block15" parent="Floor" unique_id=811573004 instance=ExtResource("2_h5fy8")]
-position = Vector2(232, 332)
+position = Vector2(232, 269)
 
 [node name="Grass block16" parent="Floor" unique_id=1049047327 instance=ExtResource("2_h5fy8")]
-position = Vector2(248, 332)
+position = Vector2(248, 269)
 
 [node name="Grass block17" parent="Floor" unique_id=756785404 instance=ExtResource("2_h5fy8")]
-position = Vector2(264, 332)
+position = Vector2(264, 269)
 
 [node name="Grass block18" parent="Floor" unique_id=927350571 instance=ExtResource("2_h5fy8")]
-position = Vector2(280, 332)
+position = Vector2(280, 269)
 
 [node name="Grass block19" parent="Floor" unique_id=578972575 instance=ExtResource("2_h5fy8")]
-position = Vector2(296, 332)
+position = Vector2(296, 269)
 
 [node name="Grass block20" parent="Floor" unique_id=575293944 instance=ExtResource("2_h5fy8")]
-position = Vector2(312, 332)
+position = Vector2(312, 269)
 
 [node name="Grass block21" parent="Floor" unique_id=1969731620 instance=ExtResource("2_h5fy8")]
-position = Vector2(328, 332)
+position = Vector2(328, 269)
 
 [node name="Grass block22" parent="Floor" unique_id=1046057453 instance=ExtResource("2_h5fy8")]
-position = Vector2(344, 332)
+position = Vector2(344, 269)
 
 [node name="Grass block23" parent="Floor" unique_id=1074463758 instance=ExtResource("2_h5fy8")]
-position = Vector2(360, 332)
+position = Vector2(360, 269)
 
 [node name="Grass block24" parent="Floor" unique_id=102492702 instance=ExtResource("2_h5fy8")]
-position = Vector2(376, 332)
+position = Vector2(376, 269)
 
 [node name="Grass block25" parent="Floor" unique_id=1782468564 instance=ExtResource("2_h5fy8")]
-position = Vector2(392, 332)
+position = Vector2(392, 269)
 
 [node name="Grass block26" parent="Floor" unique_id=1862440931 instance=ExtResource("2_h5fy8")]
-position = Vector2(408, 332)
+position = Vector2(408, 269)
 
 [node name="Grass block27" parent="Floor" unique_id=646275022 instance=ExtResource("2_h5fy8")]
-position = Vector2(424, 332)
+position = Vector2(424, 269)
 
 [node name="Grass block28" parent="Floor" unique_id=2090587991 instance=ExtResource("2_h5fy8")]
-position = Vector2(440, 332)
+position = Vector2(440, 269)
 
 [node name="Grass block29" parent="Floor" unique_id=969505223 instance=ExtResource("2_h5fy8")]
-position = Vector2(456, 332)
+position = Vector2(456, 269)
 
 [node name="Grass block30" parent="Floor" unique_id=1120925895 instance=ExtResource("2_h5fy8")]
-position = Vector2(472, 332)
+position = Vector2(472, 269)
 
 [node name="Grass block31" parent="Floor" unique_id=1878879353 instance=ExtResource("2_h5fy8")]
-position = Vector2(488, 332)
+position = Vector2(488, 269)
 
 [node name="Grass block32" parent="Floor" unique_id=1619717219 instance=ExtResource("2_h5fy8")]
-position = Vector2(504, 332)
+position = Vector2(504, 269)
 
 [node name="Grass block33" parent="Floor" unique_id=889040099 instance=ExtResource("2_h5fy8")]
-position = Vector2(520, 332)
+position = Vector2(520, 269)
 
 [node name="Grass block34" parent="Floor" unique_id=606255736 instance=ExtResource("2_h5fy8")]
-position = Vector2(536, 332)
+position = Vector2(536, 269)
 
 [node name="Grass block35" parent="Floor" unique_id=1388672958 instance=ExtResource("2_h5fy8")]
-position = Vector2(552, 332)
+position = Vector2(552, 269)
 
 [node name="Grass block36" parent="Floor" unique_id=1084222079 instance=ExtResource("2_h5fy8")]
-position = Vector2(568, 332)
+position = Vector2(568, 269)
 
 [node name="Grass block37" parent="Floor" unique_id=1367060473 instance=ExtResource("2_h5fy8")]
-position = Vector2(264, 316)
+position = Vector2(264, 253)
 
 [node name="Grass block40" parent="Floor" unique_id=332623133 instance=ExtResource("2_h5fy8")]
-position = Vector2(280, 300)
+position = Vector2(280, 237)
 
 [node name="Grass block41" parent="Floor" unique_id=2048831670 instance=ExtResource("2_h5fy8")]
-position = Vector2(296, 284)
+position = Vector2(296, 221)
 
 [node name="Grass block42" parent="Floor" unique_id=1091299393 instance=ExtResource("2_h5fy8")]
-position = Vector2(312, 268)
+position = Vector2(312, 237)
 
 [node name="Grass block43" parent="Floor" unique_id=1884499056 instance=ExtResource("2_h5fy8")]
-position = Vector2(328, 252)
+position = Vector2(328, 253)
 
 [node name="Grass block44" parent="Floor" unique_id=662581717 instance=ExtResource("2_h5fy8")]
-position = Vector2(344, 236)
+position = Vector2(569, 201)
 
 [node name="Grass block39" parent="Floor" unique_id=1214822287 instance=ExtResource("2_h5fy8")]
-position = Vector2(8, 300)
+position = Vector2(8, 237)
 
 [node name="Grass block38" parent="Floor" unique_id=1316564711 instance=ExtResource("2_h5fy8")]
-position = Vector2(568, 300)
+position = Vector2(568, 237)
 
 [node name="Grass block45" parent="Floor" unique_id=1124047849 instance=ExtResource("2_h5fy8")]
-position = Vector2(201, 216)
+position = Vector2(201, 153)
 
 [node name="Player" parent="." unique_id=1370364543 instance=ExtResource("1_qog7b")]
-position = Vector2(78, 304)
+position = Vector2(78, 241)

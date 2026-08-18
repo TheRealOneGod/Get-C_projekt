@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://c6nktp0km4vyi"
+path="res://.godot/imported/TILE SET 1.aseprite-1010069a78866fcb09b6069527327524.res"
+
+[deps]
+
+source_file="res://Aseprite/Terrain/TILE SET 1.aseprite"
+dest_files=["res://.godot/imported/TILE SET 1.aseprite-1010069a78866fcb09b6069527327524.res"]
+
+[params]
+
