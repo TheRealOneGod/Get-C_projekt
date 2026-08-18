@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://cooa64k3v2o56"
+path="res://.godot/imported/Main menu.aseprite-5e8449fda2b9f4f415bb1bd3ae39e122.res"
+
+[deps]
+
+source_file="res://Aseprite/UI/Main menu.aseprite"
+dest_files=["res://.godot/imported/Main menu.aseprite-5e8449fda2b9f4f415bb1bd3ae39e122.res"]
+
+[params]
+
