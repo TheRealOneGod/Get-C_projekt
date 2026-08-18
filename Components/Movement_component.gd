@@ -2,8 +2,8 @@ class_name MovementComponent extends Node
 
 """ Dej čemukoliv, co chceš aby se hejbalo, mělo by to byt univerzalni, kdyžtak lmk. HANDLUJE GRAVITACI! """
 
-@export var body: CharacterBody2D # s kým hejbu
-@export var sprite: AnimatedSprite2D # obrázek toho s kým hejbu
+@export var body: Node2D # s kým hejbu
+@export var sprite: Node2D # obrázek toho s kým hejbu
 @export var speed := 300.0 # rychlost pohybu
 @export var jump_velocity := -240.0 # síla skoku, musí být negativní, čím nižší tim víc skákat
 @export var gravity_multiplier := 1 # pro tlusťochy. 1 je neutral

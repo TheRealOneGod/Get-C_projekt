@@ -2,6 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://uuegsrqt6l5d" path="res://Scenes/Characters/Test character 1/Test character 1.tscn" id="1_qog7b"]
 [ext_resource type="PackedScene" uid="uid://h00ee7fb58p0" path="res://Scenes/Terrain/Grass block.tscn" id="2_h5fy8"]
+[ext_resource type="Script" uid="uid://dlmcm168vgwvc" path="res://Scenes/Terrain/deletepak.gd" id="2_pqpas"]
+
+[sub_resource type="GDScript" id="GDScript_dwsnk"]
 
 [node name="Room1" type="Node2D" unique_id=1502682762]
 
@@ -132,12 +135,17 @@ position = Vector2(328, 252)
 
 [node name="Grass block44" parent="Floor" unique_id=662581717 instance=ExtResource("2_h5fy8")]
 position = Vector2(344, 236)
+script = SubResource("GDScript_dwsnk")
 
 [node name="Grass block39" parent="Floor" unique_id=1214822287 instance=ExtResource("2_h5fy8")]
 position = Vector2(8, 300)
 
 [node name="Grass block38" parent="Floor" unique_id=1316564711 instance=ExtResource("2_h5fy8")]
 position = Vector2(568, 300)
+
+[node name="Grass block45" parent="Floor" unique_id=1124047849 instance=ExtResource("2_h5fy8")]
+position = Vector2(201, 216)
+script = ExtResource("2_pqpas")
 
 [node name="Player" parent="." unique_id=1370364543 instance=ExtResource("1_qog7b")]
 position = Vector2(119, 310)
