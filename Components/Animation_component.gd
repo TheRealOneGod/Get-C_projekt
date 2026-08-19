@@ -26,7 +26,6 @@ func animate() -> void:
 	# handle idle animations 
 	if not overriden:
 		if body.is_on_floor():
-			@warning_ignore("standalone_ternary")
 			sprite.play("Walk") if body.velocity.x else sprite.play("Idle")
 		else:
 			sprite.play("Fall")

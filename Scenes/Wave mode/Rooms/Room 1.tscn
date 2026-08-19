@@ -218,6 +218,7 @@ animations = [{
 [node name="Background" type="Node2D" parent="." unique_id=1314554570]
 
 [node name="Parallax 1" type="Parallax2D" parent="Background" unique_id=878669200]
+physics_interpolation_mode = 1
 texture_filter = 1
 texture_repeat = 2
 scroll_scale = Vector2(0, 0)
@@ -315,6 +316,7 @@ metadata/_aseprite_wizard_config_ = {
 metadata/_aseprite_wizard_source_file_hash_ = "05da74846114d1aeb1c66fb64bee2d2f"
 
 [node name="Parallax 4" type="Parallax2D" parent="Background" unique_id=618058227]
+physics_interpolation_mode = 1
 texture_filter = 1
 texture_repeat = 2
 scroll_scale = Vector2(0.1, 0.1)
@@ -348,6 +350,7 @@ metadata/_aseprite_wizard_config_ = {
 metadata/_aseprite_wizard_source_file_hash_ = "05da74846114d1aeb1c66fb64bee2d2f"
 
 [node name="Parallax 5" type="Parallax2D" parent="Background" unique_id=601463276]
+physics_interpolation_mode = 1
 texture_filter = 1
 texture_repeat = 2
 scroll_scale = Vector2(0.1, 0.1)
@@ -413,9 +416,10 @@ metadata/_aseprite_wizard_config_ = {
 metadata/_aseprite_wizard_source_file_hash_ = "05da74846114d1aeb1c66fb64bee2d2f"
 
 [node name="Parallax 7" type="Parallax2D" parent="Background" unique_id=333415354]
+physics_interpolation_mode = 1
 texture_filter = 1
 texture_repeat = 2
-scroll_scale = Vector2(0.2, 0.2)
+scroll_scale = Vector2(0.6, 0.6)
 repeat_size = Vector2(1280, 0)
 autoscroll = Vector2(10, 0)
 

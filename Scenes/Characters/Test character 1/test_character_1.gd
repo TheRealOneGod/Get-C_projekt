@@ -22,3 +22,4 @@ func _physics_process(delta: float) -> void:
 	movement_component.tick(delta)
 	animation_component.animate()
 	meele_basic_attack_component.b_attack_tick()
+	meele_basic_attack_component.facing_tick()

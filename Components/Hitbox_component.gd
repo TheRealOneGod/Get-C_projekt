@@ -1,11 +1,23 @@
-class_name HitboxComponent extends Node
+class_name HitboxComponent extends Area2D
 
-""" Handluje hitbox. Věc s tímto komponentem bude moct dělat věci, pokud ji něco hitne"""
+signal hit(hurtbox: HurtboxComponent)
 
-@export var hitbox: Node2D # ten actual hitbox se kterým pracuju
+@export var damage: float = 1.0
+@export var cooldown: float = 0.3
 
-func _ready() -> void:
-	pass
 
-func handle_hitbox():
-	pass
+func _init() -> void:
+	monitoring = true
+	monitorable = false
+	area_entered.connect(_on_area_entered)
+	
+func _on_area_entered(area: Area2D) -> void:
+	if area is not HurtboxComponent:
+		return
+	
+	var hurtbox := area as HurtboxComponent
+	
+	print("Hello")
+
+	# hurtbox.take_hit(self)
+	# hit.emit(hurtbox)

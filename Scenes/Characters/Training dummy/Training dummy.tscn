@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c15jjcgus22e5" path="res://Scenes/Characters/Training dummy/training_dummy.gd" id="1_8kbx3"]
 [ext_resource type="Script" uid="uid://r4utka6vxxf4" path="res://Components/Movement_component.gd" id="2_i6w2e"]
-[ext_resource type="Script" uid="uid://ca80gua4eoisn" path="res://Components/Hitbox_component.gd" id="3_g8wrb"]
+[ext_resource type="Script" uid="uid://ca80gua4eoisn" path="res://Components/Hurtbox_component.gd" id="3_g8wrb"]
 [ext_resource type="Script" uid="uid://76fb74nrlku2" path="res://Components/Health_component.gd" id="4_4qoro"]
 
 [sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_e4wqg"]
@@ -167,6 +167,8 @@ animations = [{
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_68pkx"]
 radius = 4.0
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6mpge"]
+
 [node name="Training dummy" type="CharacterBody2D" unique_id=1004925250]
 script = ExtResource("1_8kbx3")
 
@@ -175,7 +177,9 @@ texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_udaff")
 animation = &"Idle"
 metadata/_aseprite_wizard_interface_config_ = {
-"pending_changes": {}
+"pending_changes": {
+"source": "res://Aseprite/Enemy/Charcter 2.aseprite"
+}
 }
 metadata/_aseprite_wizard_config_ = {
 "embed_tex": true,
@@ -203,13 +207,15 @@ body = NodePath("..")
 sprite = NodePath("../Sprite")
 metadata/_custom_type_script = "uid://r4utka6vxxf4"
 
-[node name="HitboxComponent" type="Node" parent="." unique_id=1232658713 node_paths=PackedStringArray("hitbox")]
-unique_name_in_owner = true
-script = ExtResource("3_g8wrb")
-hitbox = NodePath("../Physics box")
-metadata/_custom_type_script = "uid://ca80gua4eoisn"
-
 [node name="HealthComponent" type="Node" parent="." unique_id=1129218241]
 unique_name_in_owner = true
 script = ExtResource("4_4qoro")
 metadata/_custom_type_script = "uid://76fb74nrlku2"
+
+[node name="HurtboxComponent" type="Area2D" parent="." unique_id=1583598277]
+script = ExtResource("3_g8wrb")
+metadata/_custom_type_script = "uid://ca80gua4eoisn"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtboxComponent" unique_id=1564842297]
+position = Vector2(0, 3)
+shape = SubResource("CapsuleShape2D_6mpge")
