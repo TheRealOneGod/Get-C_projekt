@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://c8a0ro7yqfs4a" path="res://Scenes/Characters/Training dummy/Training dummy.tscn" id="1_pqpas"]
 [ext_resource type="PackedScene" uid="uid://uuegsrqt6l5d" path="res://Scenes/Characters/Test character 1/Test character 1.tscn" id="1_qog7b"]
-[ext_resource type="PackedScene" uid="uid://h00ee7fb58p0" path="res://Scenes/Terrain/Grass block.tscn" id="2_h5fy8"]
+[ext_resource type="PackedScene" uid="uid://bj3bhed8t4f7w" path="res://Tiled/Levels/Level 2.tscn" id="4_dwsnk"]
 
 [sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_pqpas"]
 _data = PackedByteArray("AAADAAUAAAABAAAAAAUAANACAABSAAAAUklGRkoAAABXRUJQVlA4TD0AAAAv/8SzEAcQERFQ0LYNU/7wu+OI/mf4z3/+85///Oc///nPf/7zn//85z//+c9//vOf//znP//5z3/+878aAA==")
@@ -228,9 +228,9 @@ texture_filter = 1
 position = Vector2(141, 84)
 sprite_frames = SubResource("SpriteFrames_1gyu7")
 metadata/_aseprite_wizard_interface_config_ = {
-"animation_section": false,
+"animation_section": true,
 "layer_section": true,
-"output_section": false,
+"output_section": true,
 "pending_changes": {},
 "slice_section": false
 }
@@ -260,9 +260,9 @@ texture_filter = 1
 position = Vector2(141, 84)
 sprite_frames = SubResource("SpriteFrames_uh5qq")
 metadata/_aseprite_wizard_interface_config_ = {
-"animation_section": false,
+"animation_section": true,
 "layer_section": true,
-"output_section": false,
+"output_section": true,
 "pending_changes": {},
 "slice_section": false
 }
@@ -293,9 +293,9 @@ texture_filter = 1
 position = Vector2(141, 84)
 sprite_frames = SubResource("SpriteFrames_bsf3m")
 metadata/_aseprite_wizard_interface_config_ = {
-"animation_section": false,
+"animation_section": true,
 "layer_section": true,
-"output_section": false,
+"output_section": true,
 "pending_changes": {},
 "slice_section": false
 }
@@ -326,9 +326,9 @@ texture_filter = 1
 position = Vector2(141, 84)
 sprite_frames = SubResource("SpriteFrames_t1w82")
 metadata/_aseprite_wizard_interface_config_ = {
-"animation_section": false,
+"animation_section": true,
 "layer_section": true,
-"output_section": false,
+"output_section": true,
 "pending_changes": {},
 "slice_section": false
 }
@@ -359,9 +359,9 @@ texture_filter = 1
 position = Vector2(141, 84)
 sprite_frames = SubResource("SpriteFrames_hwria")
 metadata/_aseprite_wizard_interface_config_ = {
-"animation_section": false,
+"animation_section": true,
 "layer_section": true,
-"output_section": false,
+"output_section": true,
 "pending_changes": {},
 "slice_section": false
 }
@@ -391,9 +391,9 @@ texture_filter = 1
 position = Vector2(141, 84)
 sprite_frames = SubResource("SpriteFrames_rguru")
 metadata/_aseprite_wizard_interface_config_ = {
-"animation_section": false,
+"animation_section": true,
 "layer_section": true,
-"output_section": false,
+"output_section": true,
 "pending_changes": {},
 "slice_section": false
 }
@@ -424,9 +424,9 @@ texture_filter = 1
 position = Vector2(141, 84)
 sprite_frames = SubResource("SpriteFrames_m6c3g")
 metadata/_aseprite_wizard_interface_config_ = {
-"animation_section": false,
+"animation_section": true,
 "layer_section": true,
-"output_section": false,
+"output_section": true,
 "pending_changes": {},
 "slice_section": false
 }
@@ -456,9 +456,9 @@ texture_filter = 1
 position = Vector2(141, 84)
 sprite_frames = SubResource("SpriteFrames_td5br")
 metadata/_aseprite_wizard_interface_config_ = {
-"animation_section": false,
+"animation_section": true,
 "layer_section": true,
-"output_section": false,
+"output_section": true,
 "pending_changes": {},
 "slice_section": false
 }
@@ -489,9 +489,9 @@ texture_filter = 1
 position = Vector2(141, 84)
 sprite_frames = SubResource("SpriteFrames_nmnce")
 metadata/_aseprite_wizard_interface_config_ = {
-"animation_section": false,
+"animation_section": true,
 "layer_section": true,
-"output_section": false,
+"output_section": true,
 "pending_changes": {},
 "slice_section": false
 }
@@ -521,9 +521,9 @@ texture_filter = 1
 position = Vector2(141, 84)
 sprite_frames = SubResource("SpriteFrames_35bod")
 metadata/_aseprite_wizard_interface_config_ = {
-"animation_section": false,
+"animation_section": true,
 "layer_section": true,
-"output_section": false,
+"output_section": true,
 "pending_changes": {},
 "slice_section": false
 }
@@ -552,9 +552,9 @@ texture_filter = 1
 position = Vector2(141, 84)
 sprite_frames = SubResource("SpriteFrames_b7m6c")
 metadata/_aseprite_wizard_interface_config_ = {
-"animation_section": false,
+"animation_section": true,
 "layer_section": true,
-"output_section": false,
+"output_section": true,
 "pending_changes": {},
 "slice_section": false
 }
@@ -576,142 +576,9 @@ metadata/_aseprite_wizard_source_file_hash_ = "05da74846114d1aeb1c66fb64bee2d2f"
 [node name="Training dummy" parent="." unique_id=919666280 instance=ExtResource("1_pqpas")]
 position = Vector2(421, 88)
 
-[node name="Floor" type="Node2D" parent="." unique_id=1241453715]
-
-[node name="Grass block2" parent="Floor" unique_id=1755050781 instance=ExtResource("2_h5fy8")]
-position = Vector2(8, 269)
-
-[node name="Grass block" parent="Floor" unique_id=1939532344 instance=ExtResource("2_h5fy8")]
-position = Vector2(24, 269)
-
-[node name="Grass block3" parent="Floor" unique_id=1641538191 instance=ExtResource("2_h5fy8")]
-position = Vector2(40, 269)
-
-[node name="Grass block4" parent="Floor" unique_id=646971458 instance=ExtResource("2_h5fy8")]
-position = Vector2(56, 269)
-
-[node name="Grass block5" parent="Floor" unique_id=1720722622 instance=ExtResource("2_h5fy8")]
-position = Vector2(72, 269)
-
-[node name="Grass block6" parent="Floor" unique_id=451769925 instance=ExtResource("2_h5fy8")]
-position = Vector2(88, 269)
-
-[node name="Grass block7" parent="Floor" unique_id=405438476 instance=ExtResource("2_h5fy8")]
-position = Vector2(104, 269)
-
-[node name="Grass block8" parent="Floor" unique_id=1862340055 instance=ExtResource("2_h5fy8")]
-position = Vector2(120, 269)
-
-[node name="Grass block9" parent="Floor" unique_id=1826169479 instance=ExtResource("2_h5fy8")]
-position = Vector2(136, 269)
-
-[node name="Grass block10" parent="Floor" unique_id=753888321 instance=ExtResource("2_h5fy8")]
-position = Vector2(152, 269)
-
-[node name="Grass block11" parent="Floor" unique_id=1089489900 instance=ExtResource("2_h5fy8")]
-position = Vector2(168, 269)
-
-[node name="Grass block12" parent="Floor" unique_id=1099783334 instance=ExtResource("2_h5fy8")]
-position = Vector2(184, 269)
-
-[node name="Grass block13" parent="Floor" unique_id=1824580082 instance=ExtResource("2_h5fy8")]
-position = Vector2(200, 269)
-
-[node name="Grass block14" parent="Floor" unique_id=1697387265 instance=ExtResource("2_h5fy8")]
-position = Vector2(216, 269)
-
-[node name="Grass block15" parent="Floor" unique_id=811573004 instance=ExtResource("2_h5fy8")]
-position = Vector2(232, 269)
-
-[node name="Grass block16" parent="Floor" unique_id=1049047327 instance=ExtResource("2_h5fy8")]
-position = Vector2(248, 269)
-
-[node name="Grass block17" parent="Floor" unique_id=756785404 instance=ExtResource("2_h5fy8")]
-position = Vector2(264, 269)
-
-[node name="Grass block18" parent="Floor" unique_id=927350571 instance=ExtResource("2_h5fy8")]
-position = Vector2(280, 269)
-
-[node name="Grass block19" parent="Floor" unique_id=578972575 instance=ExtResource("2_h5fy8")]
-position = Vector2(296, 269)
-
-[node name="Grass block20" parent="Floor" unique_id=575293944 instance=ExtResource("2_h5fy8")]
-position = Vector2(312, 269)
-
-[node name="Grass block21" parent="Floor" unique_id=1969731620 instance=ExtResource("2_h5fy8")]
-position = Vector2(328, 269)
-
-[node name="Grass block22" parent="Floor" unique_id=1046057453 instance=ExtResource("2_h5fy8")]
-position = Vector2(344, 269)
-
-[node name="Grass block23" parent="Floor" unique_id=1074463758 instance=ExtResource("2_h5fy8")]
-position = Vector2(360, 269)
-
-[node name="Grass block24" parent="Floor" unique_id=102492702 instance=ExtResource("2_h5fy8")]
-position = Vector2(376, 269)
-
-[node name="Grass block25" parent="Floor" unique_id=1782468564 instance=ExtResource("2_h5fy8")]
-position = Vector2(392, 269)
-
-[node name="Grass block26" parent="Floor" unique_id=1862440931 instance=ExtResource("2_h5fy8")]
-position = Vector2(408, 269)
-
-[node name="Grass block27" parent="Floor" unique_id=646275022 instance=ExtResource("2_h5fy8")]
-position = Vector2(424, 269)
-
-[node name="Grass block28" parent="Floor" unique_id=2090587991 instance=ExtResource("2_h5fy8")]
-position = Vector2(440, 269)
-
-[node name="Grass block29" parent="Floor" unique_id=969505223 instance=ExtResource("2_h5fy8")]
-position = Vector2(456, 269)
-
-[node name="Grass block30" parent="Floor" unique_id=1120925895 instance=ExtResource("2_h5fy8")]
-position = Vector2(472, 269)
-
-[node name="Grass block31" parent="Floor" unique_id=1878879353 instance=ExtResource("2_h5fy8")]
-position = Vector2(488, 269)
-
-[node name="Grass block32" parent="Floor" unique_id=1619717219 instance=ExtResource("2_h5fy8")]
-position = Vector2(504, 269)
-
-[node name="Grass block33" parent="Floor" unique_id=889040099 instance=ExtResource("2_h5fy8")]
-position = Vector2(520, 269)
-
-[node name="Grass block34" parent="Floor" unique_id=606255736 instance=ExtResource("2_h5fy8")]
-position = Vector2(536, 269)
-
-[node name="Grass block35" parent="Floor" unique_id=1388672958 instance=ExtResource("2_h5fy8")]
-position = Vector2(552, 269)
-
-[node name="Grass block36" parent="Floor" unique_id=1084222079 instance=ExtResource("2_h5fy8")]
-position = Vector2(568, 269)
-
-[node name="Grass block37" parent="Floor" unique_id=1367060473 instance=ExtResource("2_h5fy8")]
-position = Vector2(264, 253)
-
-[node name="Grass block40" parent="Floor" unique_id=332623133 instance=ExtResource("2_h5fy8")]
-position = Vector2(280, 237)
-
-[node name="Grass block41" parent="Floor" unique_id=2048831670 instance=ExtResource("2_h5fy8")]
-position = Vector2(296, 221)
-
-[node name="Grass block42" parent="Floor" unique_id=1091299393 instance=ExtResource("2_h5fy8")]
-position = Vector2(312, 237)
-
-[node name="Grass block43" parent="Floor" unique_id=1884499056 instance=ExtResource("2_h5fy8")]
-position = Vector2(328, 253)
-
-[node name="Grass block44" parent="Floor" unique_id=662581717 instance=ExtResource("2_h5fy8")]
-position = Vector2(569, 201)
-
-[node name="Grass block39" parent="Floor" unique_id=1214822287 instance=ExtResource("2_h5fy8")]
-position = Vector2(8, 237)
-
-[node name="Grass block38" parent="Floor" unique_id=1316564711 instance=ExtResource("2_h5fy8")]
-position = Vector2(568, 237)
-
-[node name="Grass block45" parent="Floor" unique_id=1124047849 instance=ExtResource("2_h5fy8")]
-position = Vector2(201, 153)
-
 [node name="Player" parent="." unique_id=1370364543 instance=ExtResource("1_qog7b")]
-position = Vector2(78, 241)
+position = Vector2(-146, -54)
+
+[node name="Level 1 map" parent="." unique_id=1106567624 instance=ExtResource("4_dwsnk")]
+texture_filter = 1
+position = Vector2(-810, -361)
